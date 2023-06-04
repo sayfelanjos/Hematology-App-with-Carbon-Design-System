@@ -1,0 +1,81 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 1px 5px #262f5c;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 12px;
+  height: 640px;
+  flex: 1;
+}
+.card__three-dots-button {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+.card__three-dots-button-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 1.2rem;
+  height: fit-content;
+  width: 100%;
+}
+.card__avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card__avatar-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.card__avatar-image-box {
+  width: 12.6rem;
+  height: 12.6rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.card__avatar-profile {
+  width: 100%;
+  height: 100%;
+}
+.card__avatar-name {
+  font-size: 1.6rem;
+}
+.card__social-medias-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.2rem;
+}
+.card__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+.card__menu-item {
+  margin: 0.6rem;
+}
+.card__menu-item-link {
+  display: inline-block;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  padding: 0.8rem;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+.card__menu-item-link:hover {
+  background-color: cornflowerblue;
+}
+
+/*# sourceMappingURL=Card.module.css.map */

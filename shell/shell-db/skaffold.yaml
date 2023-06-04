@@ -1,0 +1,15 @@
+apiVersion: skaffold/v3
+kind: Config
+metadata:
+  name: shell-db
+manifests:
+  rawYaml:
+    - k8s/cluster-ip-service.yaml
+    - k8s/node-port-service.yaml
+    - k8s/configmap.yaml
+    - k8s/persistent-volume.yaml
+    - k8s/persistent-volume-claim.yaml
+    - k8s/deployment.yaml
+    - k8s/ingress.yaml
+deploy:
+  kubectl: {}
