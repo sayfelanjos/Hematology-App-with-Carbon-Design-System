@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongo-credentials
+  labels:
+    name: mongo-credentials
+data:
+  username: "hematology"
+  password: "123456"

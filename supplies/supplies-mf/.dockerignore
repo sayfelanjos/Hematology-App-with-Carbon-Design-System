@@ -1,0 +1,10 @@
+.idea
+k8s
+node_modules
+.dockerignore
+.eslintrc.json
+.gitignore
+Dockerfile
+package-lock.json
+README.md
+skaffold.yaml

@@ -1,0 +1,11 @@
+.idea
+k8s
+node_modules
+.dockerignore
+.eslintrc.json
+.gitignore
+.prettierignore
+.prettierrc
+Dockerfile
+README.md
+skaffold.yaml

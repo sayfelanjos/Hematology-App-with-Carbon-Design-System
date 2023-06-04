@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: users-db-pv
+  labels:
+    app: users-db-pv
+spec:
+  storageClassName: manual
+  volumeMode: Filesystem
+  persistentVolumeReclaimPolicy: Retain
+  capacity:
+    storage: 1Gi
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: "/data/postgresql"

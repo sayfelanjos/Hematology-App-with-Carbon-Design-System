@@ -1,0 +1,38 @@
+.collapse__button {
+  appearance: none;
+  background: #3f51b5;
+  color: #fff;
+  border: 0;
+  padding: 12px 35px 12px 12px;
+  border-radius: 3px;
+  position: relative;
+  max-width: 300px;
+  outline: none;
+  cursor: pointer;
+}
+.collapse__button::after {
+  content: "";
+  border-width: 6px;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: inherit;
+  position: absolute;
+  right: 12px;
+  top: calc(50% + 3px);
+  transform: translateY(-50%);
+}
+.collapse__button.active::after {
+  border-color: transparent;
+  border-bottom-color: inherit;
+  top: calc(50% - 3px);
+}
+.collapse__menu {
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(150, 150, 150, 0.65);
+  list-style: none;
+  padding: 5px 0;
+  max-width: 320px;
+}
+
+/*# sourceMappingURL=Collapse.module.css.map */

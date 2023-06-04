@@ -1,0 +1,20 @@
+### Signup a new user
+POST http://users-ms.info/auth/signup
+content-type: application/json
+
+{
+  "email": "claudiney@outlook.com.br",
+  "password": "12345"
+}
+
+### Signin a user
+POST http://users-ms.info/auth/signin
+content-type: application/json
+
+{
+  "email": "claudiney@outlook.com.br",
+  "password": "12345"
+}
+
+### Get the currently signed in User
+GET http://users-ms.info/auth/whoami
