@@ -4,8 +4,9 @@
   margin: 2rem 0 0 2rem;
   flex-basis: calc(50% - 2rem);
   height: 9.6rem;
-  &__day, &__month, &__year {
-
+  &__day,
+  &__month,
+  &__year {
     flex-grow: 1;
   }
   &__label {

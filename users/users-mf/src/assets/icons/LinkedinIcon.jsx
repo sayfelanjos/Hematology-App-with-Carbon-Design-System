@@ -12,7 +12,8 @@ function LinkedinIcon() {
       xmlns="http://www.w3.org/2000/svg"
       width="256"
       height="256"
-      viewBox="0 0 256 256">
+      viewBox="0 0 256 256"
+    >
       <g fill="none">
         <rect width="256" height="256" fill="#fff" rx="60" />
         <rect width="256" height="256" fill="#0A66C2" rx="60" />

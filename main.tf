@@ -14,5 +14,5 @@ resource "google_compute_instance" "this" {
     }
   }
   metadata_startup_script = file("startup.sh")
-  tags = ["http-server"]
+  tags                    = ["http-server"]
 }

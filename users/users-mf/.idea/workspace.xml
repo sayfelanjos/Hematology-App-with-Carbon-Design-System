@@ -1,13 +1,320 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b6c74a16-7e43-413d-9138-697812f13b6e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/stores/themeSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../statistics/statistics-mf/src/components/layout/Layout.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../statistics/statistics-mf/src/components/layout/Layout.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../supplies/supplies-mf/src/pages/supply-table/SupplyTable.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/Layout.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/Layout.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/list/UsersTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/dataSources/1d7828ea-2704-4e09-8599-27e58c3dfbeb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/dataSources/1d7828ea-2704-4e09-8599-27e58c3dfbeb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/dataSources/f3a35e09-0787-443d-a70b-c6d90af3c8b4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/dataSources/f3a35e09-0787-443d-a70b-c6d90af3c8b4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/dataSources/f3a35e09-0787-443d-a70b-c6d90af3c8b4/storage_v2/_src_/database/users-db.Ywor8A/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/dataSources/f3a35e09-0787-443d-a70b-c6d90af3c8b4/storage_v2/_src_/database/users-db.Ywor8A/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/dataSources/f67654c0-a846-4db1-8cf8-241a3dc150c0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/dataSources/f67654c0-a846-4db1-8cf8-241a3dc150c0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../contracts/contracts-ms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../contracts/contracts-ms/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../contracts/contracts-ms/skaffold.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../contracts/contracts-ms/skaffold.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../contracts/contracts-ms/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../contracts/contracts-ms/src/app.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/.stylelintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/.stylelintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/public/images/4935547_2571637.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/public/images/construction-landing-page-template.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/public/images/construction-landing-page-template/2399934.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/public/images/construction-landing-page-template/2399935.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/public/images/construction-landing-page-template/Fonts.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/public/images/construction-landing-page-template/License free.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/public/images/construction-landing-page-template/License premium.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/public/images/construction-truck-concept-illustration.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/public/images/construction-truck-concept-illustration/7362600.ai" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/public/images/construction-truck-concept-illustration/7362601.eps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/public/images/construction-truck-concept-illustration/7362602.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/public/js/amqp-websocket-client.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/public/js/amqp-websocket-client.mjs.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/app-store/app-store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/app-store/sidebarIsOpenSlice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/assets/icons/ContractsIcon.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/assets/icons/CustomersAndSuppliersIcon.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/assets/icons/InvoicesIcon.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/assets/icons/ListMarkerIcon.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/assets/icons/LogoIcon.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/assets/icons/OrdersIcon.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/assets/icons/StatisticsIcon.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/assets/icons/SuppliesIcon.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/assets/icons/UsersIcon.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/section-domain/SectionDomain.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/section-domain/SectionDomain.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/section-domain/SectionDomain.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/section-domain/SectionDomain.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/sidebar-dropdown/SidebarDropdown.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/sidebar-dropdown/SidebarDropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/sidebar-header/SidebarHeader.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/sidebar-header/SidebarHeader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/sidebar-module-button/SidebarModuleButton.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/sidebar-module-button/SidebarModuleButton.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/sidebar-module-button/SidebarModuleButton.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/sidebar-module-button/SidebarModuleButton.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/sidebar-modules/SidebarModules.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/sidebar-modules/SidebarModules.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/wrapper/wrapper.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/wrapper/wrapper.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/wrapper/wrapper.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/wrapper/wrapper.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/layout/RootLayout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/layout/RootLayout.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/layout/RootLayout.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/layout/RootLayout.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/layout/configuration-bar/ConfigurationBar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/layout/configuration-bar/ConfigurationBar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/layout/navbar/Navbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/layout/navbar/Navbar.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/layout/navbar/Navbar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/layout/navbar/Navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/layout/sidebar/DropdownAttributes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/layout/sidebar/Sidebar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/layout/sidebar/Sidebar.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/layout/sidebar/Sidebar.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/layout/sidebar/Sidebar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/pages/contracts/Contracts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/pages/contracts/Contracts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/pages/customers-and-suppliers/CustomersAndSuppliers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/pages/customers-and-suppliers/CustomersAndSuppliers.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/pages/invoices/Invoices.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/pages/invoices/Invoices.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/pages/login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/pages/login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/pages/login/Login.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/pages/login/Login.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/pages/orders/Orders.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/pages/orders/Orders.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/pages/statistics/Statistics.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/pages/statistics/Statistics.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/pages/supplies/Supplies.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/pages/supplies/Supplies.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/pages/supplies/search-supply/SearchSupply.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/pages/users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/pages/users/Users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/abstracts/_functions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/list/usesData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/abstracts/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/abstracts/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/base/_animations.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/base/_base.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/base/_normalize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/base/_reset.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/base/_typography.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/base/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/main.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/pages/pages.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/themes/_blue-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/themes/_cyan-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/themes/_gray-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/themes/_green-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/themes/_orange-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/themes/_purple-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/themes/_red-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/themes/_themes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/sass/themes/_yellow-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../statistics/statistics-mf/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/../../statistics/statistics-mf/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../statistics/statistics-mf/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../statistics/statistics-mf/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../statistics/statistics-mf/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../statistics/statistics-mf/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../statistics/statistics-mf/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../statistics/statistics-mf/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../statistics/statistics-mf/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../statistics/statistics-mf/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../statistics/statistics-mf/src/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../statistics/statistics-mf/src/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../statistics/statistics-mf/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../statistics/statistics-mf/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../statistics/statistics-ms/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../statistics/statistics-ms/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../statistics/statistics-ms/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/../../statistics/statistics-ms/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../statistics/statistics-ms/skaffold.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../statistics/statistics-ms/skaffold.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../statistics/statistics-ms/src/app.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../statistics/statistics-ms/src/app.controller.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../statistics/statistics-ms/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../statistics/statistics-ms/src/app.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../statistics/statistics-ms/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../statistics/statistics-ms/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../statistics/statistics-ms/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../statistics/statistics-ms/src/app.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../statistics/statistics-ms/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../statistics/statistics-ms/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../statistics/statistics-ms/test/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../statistics/statistics-ms/test/app.e2e-spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../supplies/supplies-mf/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../supplies/supplies-mf/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../supplies/supplies-mf/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../supplies/supplies-mf/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../supplies/supplies-mf/src/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/AppHeader.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/AppHeader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/TableButton.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/TableButton.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/TableButtonContainer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/TableButtonContainer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/TableCell.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/TableCell.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/TableContainer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/TableContainer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/TableHeader.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/TableHeader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/TablePaginationContainer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/TablePaginationContainer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/TableRow.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/TableRow.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/TableRowsContainer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/TableRowsContainer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/TableSearchContainer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/TableSearchContainer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/sidebar-button/SidebarButton.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/components/sidebar-button/SidebarButton.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../supplies/supplies-mf/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/pages/new-supply/NewSupply.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../supplies/supplies-mf/src/pages/new-supply/NewSupply.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/pages/remove-supply/RemoveSupply.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/pages/search-supply/search-supply.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/styles/colors/_colors.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/styles/fonts/_fonts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/styles/themes/_blue-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/styles/themes/_cyan-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/styles/themes/_gray-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/styles/themes/_green-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/styles/themes/_orange-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/styles/themes/_purple-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/styles/themes/_red-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/styles/themes/_themes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/src/styles/themes/_yellow-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-mf/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../supplies/supplies-mf/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-ms/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../supplies/supplies-ms/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-ms/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/../../supplies/supplies-ms/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-ms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../supplies/supplies-ms/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-ms/skaffold.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../supplies/supplies-ms/skaffold.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-ms/src/app.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../supplies/supplies-ms/src/app.controller.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-ms/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../supplies/supplies-ms/src/app.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-ms/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../supplies/supplies-ms/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-ms/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../supplies/supplies-ms/src/app.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-ms/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../supplies/supplies-ms/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../supplies/supplies-ms/test/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../supplies/supplies-ms/test/app.e2e-spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-db/k8s/node-port-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../users-db/k8s/node-port-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/InstagramIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/InstagramIcon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/LinkedinIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/LinkedinIcon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/ProfileAvatarIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/ProfileAvatarIcon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/TwitterIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/TwitterIcon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/date-input/DateInput.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/date-input/DateInput.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/date-input/DateInput.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/date-input/DateInput.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/personal-information-form/PersonalInformationForm.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/personal-information-form/PersonalInformationForm.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/text-input/TextInput.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/text-input/TextInput.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/list/List.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/list/List.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/list/UsersTable.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/list/List.module.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/list/UsersTable.module.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/list/List.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/list/UsersTable.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/profile/Profile.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/profile/Profile.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/base/_base.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/base/_reset.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/main.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/main.module.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/main.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-ms/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/../users-ms/.prettierrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-ms/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../users-ms/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-ms/k8s/node-port-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../users-ms/k8s/node-port-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-ms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../users-ms/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-ms/skaffold.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../users-ms/skaffold.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-ms/src/app.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../users-ms/src/app.controller.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-ms/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../users-ms/src/app.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-ms/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../users-ms/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-ms/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../users-ms/src/app.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-ms/src/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../users-ms/src/auth/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-ms/src/guards/auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../users-ms/src/guards/auth.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-ms/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../users-ms/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-ms/src/request.http" beforeDir="false" afterPath="$PROJECT_DIR$/../users-ms/src/request.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-ms/src/users/decorators/current-user.decorator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../users-ms/src/users/decorators/current-user.decorator.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-ms/src/users/dto/create-users.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../users-ms/src/users/dto/create-users.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-ms/src/users/dto/update-users.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../users-ms/src/users/dto/update-users.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-ms/src/users/interceptors/current-user.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../users-ms/src/users/interceptors/current-user.interceptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-ms/src/users/users.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../users-ms/src/users/users.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-ms/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../users-ms/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="minikube" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2R2H3z4qcWeRpkQkuQ2q93Qf2dh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;settings.editor.selected.configurable&quot;: &quot;application.passwordSafe&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.google.cloudcode.ide_session_index": "20230618_0001",
+    "git-widget-placeholder": "main",
+    "javascript.nodejs.core.library.configured.version": "20.2.0",
+    "javascript.nodejs.core.library.typings.version": "20.2.0",
+    "last_opened_file_path": "/home/saymon/Backup/Portifolio/Hematology-App-with-Carbon-Design-System/users/users-mf",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettier.import.notification.dismissed": "true",
+    "prettierjs.PrettierConfiguration.Package": "/home/saymon/Backup/Portifolio/Hematology-App-with-Carbon-Design-System/users/users-mf/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/layout" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b6c74a16-7e43-413d-9138-697812f13b6e" name="Changes" comment="" />
+      <created>1686441061632</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686441061632</updated>
+      <workItem from="1686441063144" duration="4006000" />
+      <workItem from="1686445091688" duration="6055000" />
+      <workItem from="1686452792398" duration="2901000" />
+      <workItem from="1686457172976" duration="60000" />
+      <workItem from="1687098827063" duration="460000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
 </project>

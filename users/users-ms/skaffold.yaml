@@ -25,5 +25,6 @@ manifests:
     - k8s/service.yaml
     - k8s/deployment.yaml
     - k8s/node-port-service.yaml
+    - k8s/configmap.yaml
 deploy:
   kubectl: {}

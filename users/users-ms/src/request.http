@@ -1,20 +1,28 @@
 ### Signup a new user
-POST http://users-ms.info/auth/signup
+POST http://localhost:4007/auth/signup
 content-type: application/json
 
 {
-  "email": "claudiney@outlook.com.br",
-  "password": "12345"
+  "email": "saymonfelipe@hotmail.com",
+  "password": "sayfel"
 }
 
 ### Signin a user
-POST http://users-ms.info/auth/signin
+POST http://localhost:4007/auth/signin
 content-type: application/json
 
 {
-  "email": "claudiney@outlook.com.br",
-  "password": "12345"
+  "email": "saymonfelipe@hotmail.com",
+  "password": "sayfel"
 }
 
-### Get the currently signed in User
-GET http://users-ms.info/auth/whoami
+### Signout a user
+POST http://localhost:4007/auth/signout
+content-type: application/json
+
+
+### Get the currently signed in user
+GET http://localhost:4007/auth/whoami
+
+### Delete an user
+DELETE http://localhost:4007/auth/3

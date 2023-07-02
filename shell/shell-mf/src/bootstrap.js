@@ -3,15 +3,26 @@ import ReactDOM from "react-dom/client";
 import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { StoreProvider } from "globalStore/globalStore";
+
+const StoreProvider =
+  process.env.NODE_ENV === "development"
+    ? () => null
+    : React.lazy(() =>
+        import("globalStore/globalStore").then((res) => ({
+          default: res.StoreProvider,
+        })),
+      );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
 root.render(
   <React.StrictMode>
-    <StoreProvider>
+    {process.env.NODE_ENV === "development" ? (
       <App />
-    </StoreProvider>
+    ) : (
+      <StoreProvider>
+        <App />
+      </StoreProvider>
+    )}
   </React.StrictMode>,
 );
 
