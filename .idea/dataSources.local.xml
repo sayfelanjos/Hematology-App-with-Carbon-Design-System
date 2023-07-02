@@ -2,7 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="WS-231.9011.35">
     <data-source name="Auth" uuid="f67654c0-a846-4db1-8cf8-241a3dc150c0">
-      <database-info product="Mongo DB" version="6.0.6" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.18" dbms="MONGO" exact-version="6.0.6" exact-driver-version="1.18" />
+      <database-info product="Mongo DB" version="6.0.6" jdbc-version="4.2" driver-name="MongoDB JDBC Driver" driver-version="1.18" dbms="MONGO" exact-version="6.0.6" />
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
       <auth-provider>no-auth</auth-provider>
@@ -12,22 +12,7 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
-    <data-source name="users-db" uuid="f3a35e09-0787-443d-a70b-c6d90af3c8b4">
-      <database-info product="PostgreSQL" version="15.3" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.6.0" dbms="POSTGRES" exact-version="15.3" exact-driver-version="42.6">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
-      <secret-storage>master_key</secret-storage>
-      <user-name>hematologyapp</user-name>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="database" qname="@">
-            <node kind="schema" qname="@" />
-          </node>
-        </introspection-scope>
-      </schema-mapping>
-    </data-source>
-    <data-source name="contracts-db" uuid="1d7828ea-2704-4e09-8599-27e58c3dfbeb">
+    <data-source name="usersdb" uuid="f3a35e09-0787-443d-a70b-c6d90af3c8b4">
       <database-info product="PostgreSQL" version="15.3" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.6.0" dbms="POSTGRES" exact-version="15.3" exact-driver-version="42.6">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
@@ -40,7 +25,7 @@
             <node kind="database" qname="@">
               <node kind="schema" qname="@" />
             </node>
-            <node kind="database" qname="postgres" />
+            <node kind="database" qname="usersdb" />
           </node>
         </introspection-scope>
       </schema-mapping>

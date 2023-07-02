@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { ModuleFederationPlugin } = require("webpack").container;
 const path = require("path");
 const deps = require("./package.json").dependencies;
+
 module.exports = {
   name: "supplies",
   mode: "development",
@@ -13,7 +14,9 @@ module.exports = {
     webSocketServer: false,
     compress: true,
     port: 3002,
-    hot: true,
+    watchFiles: ["src/**/*", "public/*"],
+    hot: false,
+    liveReload: true,
     host: "0.0.0.0",
     allowedHosts: "all",
   },
@@ -21,7 +24,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: "http://supplies-mf.info/",
+    publicPath: "/",
     clean: true,
   },
   module: {
@@ -38,6 +41,7 @@ module.exports = {
         },
       },
       {
+        exclude: /node_modules/,
         test: /\.s[ac]ss$/i,
         use: [
           // Creates `style` nodes from JS strings
@@ -49,13 +53,8 @@ module.exports = {
               modules: {
                 mode: "local",
                 auto: true,
-                // exportGlobals: true,
                 localIdentName: "[local]--[hash:base64:5]",
                 localIdentContext: path.resolve(__dirname, "src"),
-                // localIdentHashSalt: "my-custom-hash",
-                // namedExport: true,
-                // exportLocalsConvention: "camelCase",
-                // exportOnlyLocals: false,
               },
             },
           },
@@ -64,10 +63,12 @@ module.exports = {
         ],
       },
       {
+        exclude: /node_modules/,
         test: /\.(png|jp(e*)g|svg|gif)$/,
         use: ["file-loader"],
       },
       {
+        exclude: /node_modules/,
         test: /\.svg$/,
         use: ["@svg/webpack"],
       },
@@ -84,7 +85,7 @@ module.exports = {
         "./SuppliesModule": "./src/App.js",
       },
       remotes: {
-        store: `store@http://store.info/remoteEntry.js`,
+        store: "store@http://store.info/remoteEntry.js",
       },
       shared: {
         ...deps,

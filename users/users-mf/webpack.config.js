@@ -5,30 +5,27 @@ const deps = require("./package.json").dependencies;
 module.exports = {
   name: "users",
   mode: "development",
+  context: path.join(__dirname, "./"),
+  entry: "./src/index.js",
   cache: true,
   target: "web",
-  context: path.join(__dirname, "./"),
-  entry: "./src/index",
   devServer: {
     static: { directory: path.join(__dirname, "public") },
-    webSocketServer: false,
     historyApiFallback: true,
+    webSocketServer: false,
     compress: true,
     port: 3007,
+    watchFiles: ["src/**/*", "public/*"],
+    hot: false,
+    liveReload: true,
     host: "0.0.0.0",
     allowedHosts: "all",
-    hot: true,
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-      "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization",
-    },
   },
   devtool: "eval-source-map",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: "http://users-mf.info/",
+    publicPath: "/",
     clean: true,
   },
   module: {
@@ -51,6 +48,7 @@ module.exports = {
         ],
       },
       {
+        exclude: /node_modules/,
         test: /\.s[ac]ss$/i,
         use: [
           // Creates `style` nodes from JS strings
@@ -62,13 +60,8 @@ module.exports = {
               modules: {
                 mode: "local",
                 auto: true,
-                // exportGlobals: true,
                 localIdentName: "[local]--[hash:base64:5]",
                 localIdentContext: path.resolve(__dirname, "src"),
-                // localIdentHashSalt: "my-custom-hash",
-                // namedExport: true,
-                // exportLocalsConvention: "camelCase",
-                // exportOnlyLocals: false,
               },
             },
           },
@@ -77,10 +70,12 @@ module.exports = {
         ],
       },
       {
+        exclude: /node_modules/,
         test: /\.(png|jpeg|jpg|svg|gif)$/,
         type: "asset/resource",
       },
       {
+        exclude: /node_modules/,
         test: /\.svg$/i,
         issuer: /\.[jt]sx?$/,
         use: ["@svg/webpack"],
@@ -95,7 +90,7 @@ module.exports = {
       name: "users",
       filename: "remoteEntry.js",
       exposes: {
-        "./UsersModule": "./src/App",
+        "./UsersModule": "./src/App.js",
       },
       remotes: {
         globalStore: `globalStore@http://global-store.info/remoteEntry.js`,

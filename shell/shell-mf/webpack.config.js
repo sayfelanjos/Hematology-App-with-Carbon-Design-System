@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { SourceMapDevToolPlugin } = require("webpack");
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const { ModuleFederationPlugin } = require("webpack").container;
 const path = require("path");
 const deps = require("./package.json").dependencies;
@@ -10,7 +10,7 @@ module.exports = {
   cache: true,
   target: "web",
   context: path.join(__dirname, "./"),
-  entry: "./src/index",
+  entry: "./src/index.js",
   devServer: {
     static: { directory: path.join(__dirname, "public") },
     historyApiFallback: true,
@@ -26,11 +26,11 @@ module.exports = {
       "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization",
     },
   },
-  devtool: "eval-source-map",
+  devtool: process.env.NODE_ENV === "development" ? "inline-source-map" : "eval-source-map",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: "http://shell-mf.info/",
+    publicPath: "/",
     clean: true,
   },
   module: {
@@ -53,7 +53,8 @@ module.exports = {
         },
       },
       {
-        test: /\.s[ac]ss$/i,
+        exclude: /node_modules/,
+        test: /\.(scss|sass|css)$/i,
         use: [
           // Creates `style` nodes from JS strings
           { loader: "style-loader" },
@@ -64,13 +65,8 @@ module.exports = {
               modules: {
                 mode: "local",
                 auto: true,
-                // exportGlobals: true,
                 localIdentName: "[local]--[hash:base64:5]",
                 localIdentContext: path.resolve(__dirname, "src"),
-                // localIdentHashSalt: "my-custom-hash",
-                // namedExport: true,
-                // exportLocalsConvention: "camelCase",
-                // exportOnlyLocals: false,
               },
             },
           },
@@ -79,23 +75,54 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jp(e*)g|svg|gif)$/,
-        use: ["file-loader"],
-      },
-      {
-        test: /\.svg$/,
-        use: ["@svg/webpack"],
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        type: "asset",
       },
     ],
   },
+  optimization: {
+    minimizer: [
+      new ImageMinimizerPlugin({
+        minimizer: {
+          implementation: ImageMinimizerPlugin.sharpMinify,
+          options: {
+            encodeOptions: {
+              jpeg: {
+                // https://sharp.pixelplumbing.com/api-output#jpeg
+                quality: 100,
+              },
+              webp: {
+                // https://sharp.pixelplumbing.com/api-output#webp
+                lossless: true,
+              },
+              avif: {
+                // https://sharp.pixelplumbing.com/api-output#avif
+                lossless: true,
+              },
+
+              // png by default sets the quality to 100%, which is same as lossless
+              // https://sharp.pixelplumbing.com/api-output#png
+              png: {},
+
+              // gif does not support lossless compression at all
+              // https://sharp.pixelplumbing.com/api-output#gif
+              gif: {},
+            },
+          },
+        },
+      }),
+    ],
+  },
+
   resolve: {
-    extensions: [".ts", ".js", ".jsx", ".tsx", ".css", "scss"],
+    extensions: [".ts", ".js", ".jsx", ".tsx", ".css", ".scss"],
   },
   plugins: [
     new ModuleFederationPlugin({
       name: "shell",
       filename: "remoteEntry.js",
       remotes: {
+        globalStore: `globalStore@http://global-store.info/remoteEntry.js`,
         orders: `orders@http://orders-mf.info/remoteEntry.js`,
         invoices: `invoices@http://invoices-mf.info/remoteEntry.js`,
         supplies: `supplies@http://supplies-mf.info/remoteEntry.js`,
@@ -103,7 +130,6 @@ module.exports = {
         customers_and_suppliers: `customers_and_suppliers@http://customers-and-suppliers-mf.info/remoteEntry.js`,
         users: `users@http://users-mf.info/remoteEntry.js`,
         contracts: `contracts@http://contracts-mf.info/remoteEntry.js`,
-        globalStore: `globalStore@http://global-store.info/remoteEntry.js`,
       },
       shared: {
         ...deps,
@@ -121,9 +147,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./public/index.html",
       chunks: ["main"],
-    }),
-    new SourceMapDevToolPlugin({
-      filename: "[file].map",
     }),
   ],
 };

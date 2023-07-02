@@ -5,7 +5,9 @@
   flex-basis: calc(50% - 2rem);
   height: 9.6rem;
 }
-.date-input__day, .date-input__month, .date-input__year {
+.date-input__day,
+.date-input__month,
+.date-input__year {
   flex-grow: 1;
 }
 .date-input__label {
