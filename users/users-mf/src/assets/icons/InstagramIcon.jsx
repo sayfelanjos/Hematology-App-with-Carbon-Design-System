@@ -12,7 +12,8 @@ function InstagramIcon() {
       xmlns="http://www.w3.org/2000/svg"
       width="256"
       height="256"
-      viewBox="0 0 256 256">
+      viewBox="0 0 256 256"
+    >
       <g fill="none">
         <rect width="256" height="256" fill="url(#skillIconsInstagram0)" rx="60" />
         <rect width="256" height="256" fill="url(#skillIconsInstagram1)" rx="60" />
@@ -27,7 +28,8 @@ function InstagramIcon() {
             cy="0"
             r="1"
             gradientTransform="matrix(0 -253.715 235.975 0 68 275.717)"
-            gradientUnits="userSpaceOnUse">
+            gradientUnits="userSpaceOnUse"
+          >
             <stop stopColor="#FD5" />
             <stop offset=".1" stopColor="#FD5" />
             <stop offset=".5" stopColor="#FF543E" />
@@ -39,7 +41,8 @@ function InstagramIcon() {
             cy="0"
             r="1"
             gradientTransform="matrix(22.25952 111.2061 -458.39518 91.75449 -42.881 18.441)"
-            gradientUnits="userSpaceOnUse">
+            gradientUnits="userSpaceOnUse"
+          >
             <stop stopColor="#3771C8" />
             <stop offset=".128" stopColor="#3771C8" />
             <stop offset="1" stopColor="#60F" stopOpacity="0" />

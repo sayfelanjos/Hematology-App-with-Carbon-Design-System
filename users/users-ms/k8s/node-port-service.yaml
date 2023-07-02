@@ -11,4 +11,3 @@ spec:
       port: 4007
       targetPort: 4007
   type: NodePort
-  

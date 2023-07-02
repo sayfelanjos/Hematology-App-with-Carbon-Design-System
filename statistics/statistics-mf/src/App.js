@@ -1,18 +1,23 @@
 import React from "react";
 import "./App.scss";
-import PageNotFoundImage from "../public/4265848_16906.jpg";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Layout from "./components/layout/Layout";
+import { Theme } from "@carbon/react";
+import Dashboard from "./components/dashboard/Dashboard";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [{ path: "dashboard", element: <Dashboard /> }],
+  },
+]);
 
 const App = () => {
   return (
-    <div className="statistics-background">
-      {/*<WidgetContainer>*/}
-      {/*  <WidgetNumber></WidgetNumber>*/}
-      {/*  <WidgetNumber></WidgetNumber>*/}
-      {/*  <WidgetNumber></WidgetNumber>*/}
-      {/*  <WidgetNumber></WidgetNumber>*/}
-      {/*</WidgetContainer>*/}
-      <img className="page-not-found-image" src={PageNotFoundImage} alt="Page Not Found Image" />
-    </div>
+    <Theme theme="g90">
+      <RouterProvider router={router} />
+    </Theme>
   );
 };
 
