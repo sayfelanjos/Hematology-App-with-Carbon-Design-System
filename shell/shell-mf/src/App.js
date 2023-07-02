@@ -1,70 +1,61 @@
-import React from "react";
-import { ReactLocation, Router, createBrowserHistory, Outlet } from "@tanstack/react-location";
-import RootLayout from "./layout/RootLayout";
-import Statistics from "./pages/statistics/Statistics";
-import CustomersAndSuppliers from "./pages/customers-and-suppliers/CustomersAndSuppliers";
-import Contracts from "./pages/contracts/Contracts";
-import Invoices from "./pages/invoices/Invoices";
-import Login from "./pages/login/Login";
-import Orders from "./pages/orders/Orders";
-import SearchSupply from "./pages/supplies/search-supply/SearchSupply";
-import Users from "./pages/users/Users";
-import { useRouteStore } from "globalStore/globalStore";
+import React, { lazy } from "react";
+import { createBrowserRouter, Outlet, Redirect, RouterProvider } from "react-router-dom";
+import InstitutionalPage from "./pages/institutional/InstitutionalPage";
+import LoginPage from "./pages/login/LoginPage";
+import { Theme } from "@carbon/react";
+import { useBoundStore } from "./store/useBoundStore";
+import Layout from "./components/layout/Layout";
+import history from "history/browser";
+import NotFoundPage from "./pages/not-found/NotFoundPage";
+import Dashboard from "./pages/dashboard/Dashboard";
+const useRouteStore =
+  process.env.NODE_ENV === "development"
+    ? () => null
+    : lazy(() =>
+        import("globalStore/globalStore").then((res) => ({
+          default: res.useRouteStore,
+        })),
+      );
 
-const routes = [
+const router = createBrowserRouter([
   {
-    path: "login",
-    element: <Login />,
+    path: "/",
+    element: <InstitutionalPage />,
+    errorElement: <NotFoundPage />,
   },
   {
-    path: "",
-    element: <RootLayout />,
+    path: "app",
+    element: <Layout />,
     children: [
-      { path: "/", element: <Statistics /> },
-      { path: "statistics", element: <Statistics /> },
       {
-        path: "contracts",
-        element: <Outlet />,
-        children: [
-          { path: "/", element: <Contracts /> },
-          { path: "new", element: <Contracts /> },
-          { path: "list", element: <Contracts /> },
-        ],
+        index: true,
+        element: <Dashboard />,
       },
-      { path: "customers-and-suppliers", element: <CustomersAndSuppliers /> },
-      { path: "invoices", element: <Invoices /> },
-      { path: "orders", element: <Orders /> },
-      { path: "users", element: <Users /> },
       {
-        path: "supplies",
-        element: <Outlet />,
-        children: [
-          {
-            path: "/",
-            element: <SearchSupply />,
-          },
-          {
-            path: "new",
-            element: <SearchSupply />,
-          },
-          { path: "list", element: <SearchSupply /> },
-          { path: "remove", element: <SearchSupply /> },
-        ],
+        path: "login",
+        element: <LoginPage />,
       },
     ],
   },
-];
-const history = createBrowserHistory();
-const location = new ReactLocation({ history });
+  /*
+   * TODO: do admin page.
+   */
+]);
 
 const App = () => {
-  const { route, updateRoute } = useRouteStore();
-  console.log(route.pathname);
-  location.history.listen(({ location }) => {
-    updateRoute(location.pathname);
-  });
+  const themeColor = useBoundStore(({ themeColor }) => themeColor);
+  if (process.env.NODE_ENV === "production") {
+    const { updateRoute } = useRouteStore();
+    history.listen(({ location }) => {
+      updateRoute(location.pathname);
+    });
+  }
 
-  return <Router routes={routes} location={location}></Router>;
+  return (
+    <Theme theme={themeColor}>
+      <RouterProvider router={router}></RouterProvider>
+    </Theme>
+  );
 };
 
 export default App;

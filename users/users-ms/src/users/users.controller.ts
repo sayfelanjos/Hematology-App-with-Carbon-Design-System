@@ -21,38 +21,10 @@ import { CurrentUser } from "./decorators/current-user.decorator";
 import { Users } from "./entities/users.entity";
 import { AuthGuard } from "../guards/auth.guard";
 
-@Controller("auth")
+@Controller("user")
 @Serialize(UsersDto)
 export class UsersController {
-  constructor(
-    private usersService: UsersService,
-    private authService: AuthService,
-  ) {}
-
-  @Get("/whoami")
-  @UseGuards(AuthGuard)
-  whoAmI(@CurrentUser() user: Users) {
-    return user;
-  }
-
-  @Post("/signup")
-  async createUser(@Body() body: CreateUsersDto, @Session() session: any) {
-    const user = await this.authService.signup(body.email, body.password);
-    session.userid = user.id;
-    return user;
-  }
-
-  @Post("/signout")
-  signOut(@Session() session: any) {
-    session.userid = null;
-  }
-
-  @Post("/signin")
-  async signin(@Body() body: CreateUsersDto, @Session() session: any) {
-    const user = await this.authService.signin(body.email, body.password);
-    session.userid = user.id;
-    return user;
-  }
+  constructor(private usersService: UsersService) {}
 
   @Get("/:id")
   async findUser(@Param("id") id: string) {
@@ -68,7 +40,7 @@ export class UsersController {
     return this.usersService.find(email);
   }
 
-  @Delete()
+  @Delete("/:id")
   removeUser(@Param("id") id: string) {
     return this.usersService.remove(parseInt(id));
   }

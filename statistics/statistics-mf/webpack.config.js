@@ -35,7 +35,7 @@ module.exports = {
         },
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.(scss|sass|css)$/i,
         use: [
           // Creates `style` nodes from JS strings
           { loader: "style-loader" },

@@ -3,7 +3,7 @@ kind: Config
 metadata:
   name: statistics-ms
 build:
-  platforms: ['linux/amd64']
+  platforms: ["linux/amd64"]
   tagPolicy:
     gitCommit: {}
   local:
@@ -13,153 +13,153 @@ build:
       context: .
       sync:
         manual:
-          - src: 'src/*.controller.spec.ts'
+          - src: "src/*.controller.spec.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/*.controller.ts'
+          - src: "src/*.controller.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/*.module.ts'
+          - src: "src/*.module.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/*.service.ts'
+          - src: "src/*.service.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/main.ts'
+          - src: "src/**/main.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/*.controller.spec.ts'
+          - src: "src/**/*.controller.spec.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/*.controller.ts'
+          - src: "src/**/*.controller.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/*.module.ts'
+          - src: "src/**/*.module.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/*.service.ts'
+          - src: "src/**/**/*.service.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/*.controller.spec.ts'
+          - src: "src/**/**/*.controller.spec.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/*.controller.ts'
+          - src: "src/**/**/*.controller.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/*.module.ts'
+          - src: "src/**/**/*.module.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/*.service.ts'
+          - src: "src/**/**/**/*.service.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/*.controller.spec.ts'
+          - src: "src/**/**/**/*.controller.spec.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/*.controller.ts'
+          - src: "src/**/**/**/*.controller.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/*.module.ts'
+          - src: "src/**/**/**/*.module.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/**/*.service.ts'
+          - src: "src/**/**/**/**/*.service.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/**/*.controller.spec.ts'
+          - src: "src/**/**/**/**/*.controller.spec.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/**/*.controller.ts'
+          - src: "src/**/**/**/**/*.controller.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/**/*.module.ts'
+          - src: "src/**/**/**/**/*.module.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/**/**/*.service.ts'
+          - src: "src/**/**/**/**/**/*.service.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/**/**/*.controller.spec.ts'
+          - src: "src/**/**/**/**/**/*.controller.spec.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/**/**/*.controller.ts'
+          - src: "src/**/**/**/**/**/*.controller.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/**/**/*.module.ts'
+          - src: "src/**/**/**/**/**/*.module.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/**/**/**/*.service.ts'
+          - src: "src/**/**/**/**/**/**/*.service.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/**/**/**/*.controller.spec.ts'
+          - src: "src/**/**/**/**/**/**/*.controller.spec.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/**/**/**/*.controller.ts'
+          - src: "src/**/**/**/**/**/**/*.controller.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/**/**/**/*.module.ts'
+          - src: "src/**/**/**/**/**/**/*.module.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/**/**/**/**/*.service.ts'
+          - src: "src/**/**/**/**/**/**/**/*.service.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/**/**/**/**/*.controller.spec.ts'
+          - src: "src/**/**/**/**/**/**/**/*.controller.spec.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/**/**/**/**/*.controller.ts'
+          - src: "src/**/**/**/**/**/**/**/*.controller.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/**/**/**/**/*.module.ts'
+          - src: "src/**/**/**/**/**/**/**/*.module.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/**/**/**/**/**/*.service.ts'
+          - src: "src/**/**/**/**/**/**/**/**/*.service.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/**/**/**/**/**/*.controller.spec.ts'
+          - src: "src/**/**/**/**/**/**/**/**/*.controller.spec.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/**/**/**/**/**/*.controller.ts'
+          - src: "src/**/**/**/**/**/**/**/**/*.controller.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/**/**/**/**/**/*.module.ts'
+          - src: "src/**/**/**/**/**/**/**/**/*.module.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
 
-          - src: 'src/**/**/**/**/**/**/**/**/*.service.ts'
+          - src: "src/**/**/**/**/**/**/**/**/*.service.ts"
             dest: /statistics-ms/src
-            strip: 'src/'
+            strip: "src/"
       docker:
         dockerfile: Dockerfile
 

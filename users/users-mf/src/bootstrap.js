@@ -1,15 +1,32 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { StoreProvider } from "globalStore/globalStore";
 import App from "./App";
+import "./index.scss";
 import reportWebVitals from "./reportWebVitals";
+import { Theme } from "@carbon/react";
+const StoreProvider =
+  process.env.NODE_ENV === "development"
+    ? () => null
+    : React.lazy(() =>
+        import("globalStore/globalStore").then((res) => ({
+          default: res.StoreProvider,
+        })),
+      );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <StoreProvider>
-      <App />
-    </StoreProvider>
+    {process.env.NODE_ENV === "development" ? (
+      <Theme theme="g100">
+        <App />
+      </Theme>
+    ) : (
+      <StoreProvider>
+        <Theme theme="g90">
+          <App />
+        </Theme>
+      </StoreProvider>
+    )}
   </React.StrictMode>,
 );
 

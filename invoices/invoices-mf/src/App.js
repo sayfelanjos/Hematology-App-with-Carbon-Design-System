@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="invoices-container">
       {/*<h1>Hi there!!!</h1>*/}
-      {/*<h1>I am Invoices Micro Frontend!!!</h1>*/}
+      {/*<h1>I am InvoicesPage Micro Frontend!!!</h1>*/}
       <img
         className="invoices-page-not-found-image"
         src={PageNotFoundImage}

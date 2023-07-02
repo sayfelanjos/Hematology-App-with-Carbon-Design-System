@@ -12,3 +12,5 @@ package-lock.json
 README.md
 skaffold.yaml
 src/request.http
+.development.env
+.env
