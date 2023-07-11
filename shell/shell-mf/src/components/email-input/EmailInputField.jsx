@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   Section,
@@ -12,19 +12,53 @@ import {
 import { ArrowRight } from "@carbon/react/icons";
 import Google from "../../assets/icons/Google";
 import Outlook from "../../assets/icons/Outlook";
-import styles from "./EmailInputForm.module.scss";
-const EmailInputForm = (props) => {
-  const { isEnteredEmailInvalid, handleOnChangeEmail, handleBlur, handleOnClick } = props;
+import styles from "./EmailInput.module.scss";
+import { validateEmail } from "../../utils/validateEmail";
+
+const EmailInput = (props) => {
+  const { emailValue, handleChangeEmail, handleClick } = props;
+  const [state, setState] = useState({
+    wasEmailFieldTouched: false,
+    isEnteredEmailValid: false,
+  });
+
+  const handleFocus = () => {
+    setState({
+      ...state,
+      wasEmailFieldTouched: true,
+      isEnteredEmailValid: true,
+    });
+  };
+  const handleBlur = () => {
+    if (!emailValue) {
+      setState({
+        ...state,
+        isEnteredEmailValid: false,
+      });
+    } else if (validateEmail(emailValue)) {
+      setState({
+        ...state,
+        isEnteredEmailValid: true,
+      });
+    } else {
+      setState({
+        ...state,
+        isEnteredEmailValid: false,
+      });
+    }
+  };
+  const isEnteredEmailInValid = !state.isEnteredEmailValid && state.wasEmailFieldTouched;
+
   return (
     <>
       <Section level={6}>
-        <Heading>
+        <Heading className={styles["heading-font"]}>
           Não tem uma conta? Solicite uma <Link to={"#"}>Aqui</Link>
         </Heading>
       </Section>
       <SideNavDivider className={styles["sidenav-divider"]} />
       <Section>
-        <FormLabel className={styles["input-label"]}>
+        <FormLabel htmlFor="email" className={styles["input-label"]}>
           Email<Link to={"#"}>Esqueceu seu email?</Link>
         </FormLabel>
       </Section>
@@ -33,12 +67,13 @@ const EmailInputForm = (props) => {
         name="email"
         labelText=""
         placeholder="Entre com o seu email"
-        invalid={isEnteredEmailInvalid}
+        invalid={isEnteredEmailInValid}
         invalidText="Coloque um email válido!"
         size={"lg"}
         type="text"
-        onChange={handleOnChangeEmail}
-        helperText="Ex: exemplo@exemplo.com.br"
+        onChange={handleChangeEmail}
+        helperText="Ex: example@example.com.br"
+        onFocus={handleFocus}
         onBlur={handleBlur}
       />
       <Button
@@ -46,7 +81,7 @@ const EmailInputForm = (props) => {
         size={"lg"}
         renderIcon={ArrowRight}
         type="button"
-        onClick={handleOnClick}>
+        onClick={handleClick}>
         Continue
       </Button>
       <Checkbox
@@ -56,7 +91,7 @@ const EmailInputForm = (props) => {
       />
       <SideNavDivider className={styles["sidenav-divider"]} />
       <Section level={6}>
-        <Heading>Logins Alternativos</Heading>
+        <Heading className={styles["heading-font"]}>Logins Alternativos</Heading>
       </Section>
       <Button renderIcon={Google} className={styles["form-button"]} kind={"tertiary"}>
         Login com Google
@@ -66,7 +101,7 @@ const EmailInputForm = (props) => {
       </Button>
       <SideNavDivider className={styles["sidenav-divider"]} />
       <Section level={6}>
-        <Heading>
+        <Heading className={styles["heading-font"]}>
           Necessita de Ajuda? <Link to={"#"}>Contate-nos</Link>
         </Heading>
       </Section>
@@ -74,4 +109,4 @@ const EmailInputForm = (props) => {
   );
 };
 
-export default EmailInputForm;
+export default EmailInput;
