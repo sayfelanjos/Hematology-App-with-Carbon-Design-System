@@ -1,10 +1,10 @@
 import React from "react";
-import { Button, FormLabel, Heading, Link, Section, TextInput } from "@carbon/react";
+import { Button, FormLabel, Heading, Link, Section, PasswordInput } from "@carbon/react";
 import { ArrowRight } from "@carbon/react/icons";
-import styles from "./PasswordInputForm.module.scss";
+import styles from "./PasswordInput.module.scss";
 
-const PasswordInputForm = (props) => {
-  const { handleOnChangePassword } = props;
+const PasswordInputField = (props) => {
+  const { handleChangePassword } = props;
   return (
     <>
       <Section level={6}>
@@ -13,11 +13,11 @@ const PasswordInputForm = (props) => {
         </Heading>
       </Section>
       <Section>
-        <FormLabel className={styles["input-label"]}>
+        <FormLabel htmlFor="password" className={styles["input-label"]}>
           Password<Link href={"#"}>Esqueceu seu password?</Link>
         </FormLabel>
       </Section>
-      <TextInput
+      <PasswordInput
         id="password"
         name="password"
         labelText=""
@@ -26,7 +26,7 @@ const PasswordInputForm = (props) => {
         placeholder={"Entre com o seu password"}
         size={"lg"}
         type="text"
-        onChange={handleOnChangePassword}
+        onChange={handleChangePassword}
       />
       <Button className={styles["form-button"]} size={"lg"} renderIcon={ArrowRight} type="submit">
         Log in
@@ -35,4 +35,4 @@ const PasswordInputForm = (props) => {
   );
 };
 
-export default PasswordInputForm;
+export default PasswordInputField;
