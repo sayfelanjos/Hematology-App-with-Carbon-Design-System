@@ -1,9 +1,12 @@
 import React from "react";
 import { Switcher, SwitcherItem, HeaderPanel, SwitcherDivider } from "@carbon/react";
 
-const AccountMenu = ({ isAccountPanelExpanded }) => {
+const AccountPanel = ({ isAccountPanelExpanded }) => {
   return (
-    <HeaderPanel expanded={isAccountPanelExpanded} href="#switcher-button">
+    <HeaderPanel
+      expanded={isAccountPanelExpanded}
+      href="#switcher-button"
+      aria-label="User profile panel">
       <Switcher aria-label="Switcher Container">
         <SwitcherItem aria-label="Link " href="#">
           Link
@@ -30,4 +33,4 @@ const AccountMenu = ({ isAccountPanelExpanded }) => {
   );
 };
 
-export default AccountMenu;
+export default AccountPanel;
