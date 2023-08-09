@@ -11,6 +11,8 @@
       <excludeFolder url="file://$MODULE_DIR$/supplies/supplies-ms/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/users/.idea/dataSources" />
       <excludeFolder url="file://$MODULE_DIR$/users/users-ms/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/terraform/azure/.terraform" />
+      <excludeFolder url="file://$MODULE_DIR$/terraform/gcp/.terraform" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
