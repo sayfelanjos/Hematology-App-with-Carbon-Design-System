@@ -22,11 +22,11 @@ import {
   Notification,
   Settings,
 } from "@carbon/react/icons";
-import QuickSettings from "../quick-settings/QuickSettings";
+import QuickSettingsPanel from "../quick-settings-panel/QuickSettingsPanel";
 import styles from "./Layout.module.scss";
 import { Outlet, useLocation } from "react-router-dom";
-import AccountMenu from "../account-menu/AccountMenu";
-import ShellLeftPanel from "../shell-left-panel/ShellLeftPanel";
+import ProfilePanel from "../profile-panel/ProfilePanel";
+import LeftSideNav from "../left-sidenav/LeftSideNav";
 import LoginPanel from "../login-panel/LoginPanel";
 
 function Layout() {
@@ -34,7 +34,6 @@ function Layout() {
   const [isAccountPanelExpanded, toggleIsAccountPanelExpanded] = useState(false);
   const { theme } = useTheme();
   const location = useLocation();
-  console.log(location.pathname);
   const onClickSettingsPanelExpand = () => {
     toggleIsSettingsPanelExpanded(!isSettingsPanelExpanded);
   };
@@ -46,7 +45,7 @@ function Layout() {
     <HeaderContainer
       render={({ isSideNavExpanded, onClickSideNavExpand }) => (
         <>
-          <Header aria-label="IBM Platform Name">
+          <Header aria-label="Application name">
             {location.pathname !== "/app/login" ? (
               <HeaderMenuButton
                 aria-label={isSideNavExpanded ? "Close menu" : "Open menu"}
@@ -56,7 +55,7 @@ function Layout() {
                 aria-expanded={isSideNavExpanded}
               />
             ) : null}
-            <HeaderName href="#" prefix="Hematologia">
+            <HeaderName href="/" prefix="Hematologia">
               [Unicamp]
             </HeaderName>
             <HeaderGlobalBar>
@@ -87,15 +86,15 @@ function Layout() {
               ) : null}
             </HeaderGlobalBar>
             {location.pathname !== "/app/login" ? (
-              <ShellLeftPanel
+              <LeftSideNav
                 isSideNavExpanded={isSideNavExpanded}
                 onClickSideNavExpand={onClickSideNavExpand}
               />
             ) : (
               <LoginPanel />
             )}
-            <QuickSettings isSettingsPanelExpanded={isSettingsPanelExpanded} />
-            <AccountMenu isAccountPanelExpanded={isAccountPanelExpanded} />
+            <QuickSettingsPanel isSettingsPanelExpanded={isSettingsPanelExpanded} />
+            <ProfilePanel isAccountPanelExpanded={isAccountPanelExpanded} />
           </Header>
           {location.pathname !== "/app/login" ? (
             <Theme

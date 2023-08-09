@@ -11,11 +11,11 @@ import {
   SwitcherDivider,
 } from "@carbon/react";
 import { Settings } from "@carbon/react/icons";
-import styles from "./QuickSettings.module.scss";
+import styles from "./QuickSettingsPanel.module.scss";
 import LayoutIcon from "../../assets/icons/LayoutIcon";
 import { useBoundStore } from "../../store/useBoundStore";
 
-const QuickSettings = ({ isSettingsPanelExpanded }) => {
+const QuickSettingsPanel = ({ isSettingsPanelExpanded }) => {
   const setThemeColor = useBoundStore(({ setThemeColor }) => setThemeColor);
 
   return (
@@ -61,4 +61,4 @@ const QuickSettings = ({ isSettingsPanelExpanded }) => {
   );
 };
 
-export default QuickSettings;
+export default QuickSettingsPanel;

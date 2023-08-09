@@ -2,9 +2,9 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import { SideNav, SideNavItems, SideNavMenu, SideNavMenuItem, Theme } from "@carbon/react";
 import { InventoryManagement } from "@carbon/react/icons";
-import styles from "./ShellLeftPanel.module.scss";
+import styles from "./LeftSideNav.module.scss";
 
-const ShellLeftPanel = (props) => {
+const LeftSideNav = (props) => {
   const { onClickSideNavExpand, isSideNavExpanded } = props;
   const location = useLocation();
   return (
@@ -30,4 +30,4 @@ const ShellLeftPanel = (props) => {
   );
 };
 
-export default ShellLeftPanel;
+export default LeftSideNav;

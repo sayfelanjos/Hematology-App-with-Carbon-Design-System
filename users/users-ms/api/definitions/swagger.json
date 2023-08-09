@@ -1,0 +1,151 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Hematology API [Unicamp]",
+    "description": "The Users Microservice API of the Laboratory Information Management System, LIMS provide the following operations:\n- Create User\n- List Users\n- Update User\n- Delete User\n- Login\n- Logout\n- Current User",
+    "version": "1.0",
+    "contact": {}
+  },
+  "tags": [{ "name": "users", "description": "" }],
+  "servers": [],
+  "components": {
+    "schemas": {
+      "UpdateUser": { "type": "object", "properties": {} },
+      "SignIn": { "type": "object", "properties": {} },
+      "CreateUsers": { "type": "object", "properties": {} }
+    }
+  },
+  "paths": {
+    "/user/{id}": {
+      "get": {
+        "operationId": "UsersController_findUser",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": { "type": "integer", "example": 12345 }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "This operation get the user identified with {id} number",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "email": {
+                      "type": "string",
+                      "example": "email@example.com"
+                    },
+                    "password": {
+                      "type": "string",
+                      "example": "j@-&jasdfjpoiqwe"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "operationId": "UsersController_removeUser",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": { "200": { "description": "" } }
+      },
+      "patch": {
+        "operationId": "UsersController_updateUser",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": { "type": "string" }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              }
+            }
+          }
+        },
+        "responses": { "200": { "description": "" } }
+      }
+    },
+    "/user": {
+      "get": {
+        "operationId": "UsersController_findAllUsers",
+        "parameters": [
+          {
+            "name": "email",
+            "required": true,
+            "in": "query",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": { "200": { "description": "" } }
+      }
+    },
+    "/auth/signin": {
+      "post": {
+        "operationId": "AuthController_signIn",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "type": "object", "properties": {} }
+            }
+          }
+        },
+        "responses": { "200": { "description": "" } }
+      }
+    },
+    "/auth/whoami": {
+      "get": {
+        "operationId": "AuthController_whoAmI",
+        "parameters": [],
+        "responses": { "200": { "description": "" } }
+      }
+    },
+    "/auth/signup": {
+      "post": {
+        "operationId": "AuthController_createUser",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {}
+              }
+            }
+          }
+        },
+        "responses": { "201": { "description": "" } }
+      }
+    },
+    "/auth/signout": {
+      "post": {
+        "operationId": "AuthController_signOut",
+        "parameters": [],
+        "responses": { "201": { "description": "" } }
+      }
+    }
+  }
+}
