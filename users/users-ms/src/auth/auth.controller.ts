@@ -2,28 +2,25 @@ import {
   Body,
   Controller,
   Get,
-  HttpCode,
-  HttpStatus,
   Post,
   Session,
   UseGuards,
 } from "@nestjs/common";
-import { UsersService } from "../users/users.service";
+import { UserService } from "../user/user.service";
 import { AuthService } from "./auth.service";
-import { AuthGuard } from "../guards/auth.guard";
-import { CreateUsersDto } from "../users/dto/create-users.dto";
-import { SignInDto } from "./dto/signInDto.dto";
+import { AuthGuard } from "./auth.guard";
+import { CreateUserDto } from "../user/create-user.dto";
+import { AuthSignInDto } from "./auth-signin.dto";
 
 @Controller("auth")
 export class AuthController {
   constructor(
-    private usersService: UsersService,
+    private usersService: UserService,
     private authService: AuthService,
   ) {}
 
-  @HttpCode(HttpStatus.OK)
   @Post("/signin")
-  async signIn(@Body() signInDto: SignInDto, @Session() session: any) {
+  async signIn(@Body() signInDto: AuthSignInDto, @Session() session: any) {
     const user = await this.authService.signIn(
       signInDto.email,
       signInDto.password,
@@ -38,7 +35,7 @@ export class AuthController {
   }
 
   @Post("/signup")
-  async createUser(@Body() body: CreateUsersDto, @Session() session: any) {
+  async createUser(@Body() body: CreateUserDto, @Session() session: any) {
     const user = await this.authService.signUp(body.email, body.password);
     session.userId = user.id;
     return user;

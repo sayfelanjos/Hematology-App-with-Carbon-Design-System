@@ -1,7 +1,7 @@
 apiVersion: skaffold/v3
 kind: Config
 metadata:
-  name: users-ms
+  name: userss-ms
 build:
   platforms: ["linux/amd64"]
   tagPolicy:

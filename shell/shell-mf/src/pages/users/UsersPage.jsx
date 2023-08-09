@@ -3,7 +3,7 @@ const UsersModule =
   process.env.NODE_ENV === "devolopment"
     ? () => null
     : React.lazy(() =>
-        import("orders/UsersModule").then((res) => ({
+        import("orders/UserModule").then((res) => ({
           default: res.UsersModule,
         })),
       );

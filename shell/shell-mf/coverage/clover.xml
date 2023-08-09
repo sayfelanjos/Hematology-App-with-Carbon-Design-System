@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1688768744422" clover="3.2.0">
+  <project timestamp="1688768744422" name="All files">
+    <metrics statements="21" coveredstatements="4" conditionals="8" coveredconditionals="0" methods="6" coveredmethods="0" elements="35" coveredelements="4" complexity="0" loc="21" ncloc="21" packages="3" files="4" classes="4"/>
+    <package name="assets.icons">
+      <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="Google.jsx" path="/home/saymon/Backup/Portifolio/Hematology-App-with-Carbon-Design-System/shell/shell-mf/src/assets/icons/Google.jsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+      <file name="Outlook.jsx" path="/home/saymon/Backup/Portifolio/Hematology-App-with-Carbon-Design-System/shell/shell-mf/src/assets/icons/Outlook.jsx">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.email-input">
+      <metrics statements="13" coveredstatements="1" conditionals="6" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="EmailInputField.jsx" path="/home/saymon/Backup/Portifolio/Hematology-App-with-Carbon-Design-System/shell/shell-mf/src/components/email-input/EmailInputField.jsx">
+        <metrics statements="13" coveredstatements="1" conditionals="6" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="38" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="50" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="52" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="4" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="validateEmail.js" path="/home/saymon/Backup/Portifolio/Hematology-App-with-Carbon-Design-System/shell/shell-mf/src/utils/validateEmail.js">
+        <metrics statements="4" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

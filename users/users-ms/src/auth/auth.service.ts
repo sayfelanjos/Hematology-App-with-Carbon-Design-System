@@ -4,16 +4,18 @@ import {
   NotFoundException,
   UnauthorizedException,
 } from "@nestjs/common";
-import { UsersService } from "../users/users.service";
+import { UserService } from "../user/user.service";
 import { randomBytes, scrypt as _scrypt } from "crypto";
 import { promisify } from "util";
 import { JwtService } from "@nestjs/jwt";
+import { User } from "../user/user.entity";
+import sendgrid from "@sendgrid/mail";
 
 const scrypt = promisify(_scrypt);
 @Injectable()
 export class AuthService {
   constructor(
-    private usersService: UsersService,
+    private usersService: UserService,
     private jwtService: JwtService,
   ) {}
 
@@ -31,7 +33,7 @@ export class AuthService {
     return { access_token: await this.jwtService.signAsync(payload) };
   }
 
-  async signUp(email: string, password: string) {
+  async signUp(email: string, password: string): Promise<User> {
     const users = await this.usersService.find(email);
     if (users.length) {
       throw new BadRequestException("email in use");
@@ -40,5 +42,11 @@ export class AuthService {
     const hash = (await scrypt(password, salt, 32)) as Buffer;
     const result = salt + "." + hash.toString("hex");
     return await this.usersService.create(email, result);
+  }
+
+  sendEmail({ to, from, subject, text, html }) {
+    sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
+    const msg = { to, from, subject, text, html };
+    return sendgrid.send(msg);
   }
 }
