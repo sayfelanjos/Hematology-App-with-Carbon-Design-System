@@ -59,12 +59,12 @@ services:
       - ./contracts/contracts-mf/src:/contracts-mf/src
 
   users-mf:
-    container_name: users-mf
+    container_name: user-mf
     build: ./users/users-mf
     ports:
       - "3007:80"
     volumes:
-      - ./users/users-mf/src:/users-mf/src
+      - ./user/user-mf/src:/user-mf/src
 
   ################################## Micro Services ################################
 
@@ -125,12 +125,12 @@ services:
       - ./contracts/contracts-ms/src:/contracts-ms/src
 
   users-ms:
-    container_name: users-ms
+    container_name: user-ms
     build: ./users/users-ms
     ports:
       - "4007:80"
     volumes:
-      - ./users/users-ms/src:/users-ms/src
+      - ./user/user-ms/src:/user-ms/src
 
   ################################## Databases #####################################
 
@@ -177,7 +177,7 @@ services:
       - "5006:27017"
 
   users-db:
-    container_name: users-db
+    container_name: user-db
     image: mongo:latest
     ports:
       - "5007:27017"

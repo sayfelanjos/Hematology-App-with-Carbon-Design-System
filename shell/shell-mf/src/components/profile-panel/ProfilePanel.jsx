@@ -1,7 +1,7 @@
 import React from "react";
 import { Switcher, SwitcherItem, HeaderPanel, SwitcherDivider } from "@carbon/react";
 
-const AccountPanel = ({ isAccountPanelExpanded }) => {
+const ProfilePanel = ({ isAccountPanelExpanded }) => {
   return (
     <HeaderPanel
       expanded={isAccountPanelExpanded}
@@ -33,4 +33,4 @@ const AccountPanel = ({ isAccountPanelExpanded }) => {
   );
 };
 
-export default AccountPanel;
+export default ProfilePanel;

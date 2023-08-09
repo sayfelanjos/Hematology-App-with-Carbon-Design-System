@@ -62,3 +62,8 @@ requires:
   # State Management
   - configs: ["global-store"]
     path: global-store/skaffold.yaml
+
+test:
+  - image: shell-mf
+    custom:
+      - command: echo This is a custom test commmand!

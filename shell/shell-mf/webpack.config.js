@@ -3,8 +3,9 @@ const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const { ModuleFederationPlugin } = require("webpack").container;
 const path = require("path");
 const deps = require("./package.json").dependencies;
+const { EnvironmentPlugin } = require("webpack");
 
-module.exports = {
+module.exports = (env) => ({
   name: "shell",
   mode: "development",
   cache: true,
@@ -148,5 +149,10 @@ module.exports = {
       template: "./public/index.html",
       chunks: ["main"],
     }),
+    new EnvironmentPlugin({
+      NODE_ENV: "development", // use 'development' unless process.env.NODE_ENV is defined
+      REACT_APP_BASEURL: "localhost",
+      REACT_APP_PORT: "4007",
+    }),
   ],
-};
+});

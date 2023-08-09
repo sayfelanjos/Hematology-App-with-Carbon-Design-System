@@ -1,53 +1,93 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useLoginPanelStore } from "../../store/useLoginPanelStore";
 import {
-  Section,
-  Heading,
-  FormLabel,
-  TextInput,
   Button,
   Checkbox,
+  FormLabel,
+  Heading,
+  Section,
   SideNavDivider,
+  TextInput,
 } from "@carbon/react";
 import { ArrowRight } from "@carbon/react/icons";
 import Google from "../../assets/icons/Google";
 import Outlook from "../../assets/icons/Outlook";
-import styles from "./EmailInput.module.scss";
+import styles from "./EmailInputField.module.scss";
 import { validateEmail } from "../../utils/validateEmail";
 
-const EmailInput = (props) => {
-  const { emailValue, handleChangeEmail, handleClick } = props;
-  const [state, setState] = useState({
+const EmailInputField = () => {
+  const [googleOauthUrl, setGoogleOauthUrl] = useState("");
+  const setIsEmailInputInvalid = useLoginPanelStore(
+    ({ setIsEmailInputInvalid }) => setIsEmailInputInvalid,
+  );
+  const [emailInputState, setEmailInputState] = useState({
     wasEmailFieldTouched: false,
     isEnteredEmailValid: false,
   });
+  const emailValue = useLoginPanelStore(({ emailValue }) => emailValue);
+  const setEmailValue = useLoginPanelStore(({ setEmailValue }) => setEmailValue);
 
-  const handleFocus = () => {
-    setState({
-      ...state,
-      wasEmailFieldTouched: true,
-      isEnteredEmailValid: true,
-    });
+  useEffect(() => {
+    const loadOauthUrl = async () => {
+      try {
+        const response = await fetch("http://localhost:4007/auth/google/url", {
+          method: "GET",
+        });
+        const { url } = await response.json();
+        setGoogleOauthUrl(url);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    loadOauthUrl();
+  }, []);
+
+  const handleChangeEmail = (event) => {
+    setEmailValue(event.target.value);
   };
-  const handleBlur = () => {
-    if (!emailValue) {
-      setState({
-        ...state,
-        isEnteredEmailValid: false,
+
+  const handleKeyPress = (event) => {
+    const isEmailValid = validateEmail(emailValue);
+    if (event.key === "Enter") {
+      event.preventDefault();
+      setEmailInputState({
+        ...emailInputState,
+        isEnteredEmailValid: isEmailValid,
       });
-    } else if (validateEmail(emailValue)) {
-      setState({
-        ...state,
-        isEnteredEmailValid: true,
-      });
+      setIsEmailInputInvalid(!isEmailValid);
     } else {
-      setState({
-        ...state,
+      setEmailInputState({ ...emailInputState, isEnteredEmailValid: true });
+    }
+  };
+
+  const handleClick = () => {
+    const isEmailValid = validateEmail(emailValue);
+    setIsEmailInputInvalid(!isEmailValid);
+    if (!isEmailValid) {
+      setEmailInputState({
+        ...emailInputState,
+        wasEmailFieldTouched: true,
         isEnteredEmailValid: false,
       });
     }
   };
-  const isEnteredEmailInValid = !state.isEnteredEmailValid && state.wasEmailFieldTouched;
+
+  const handleFocus = () => {
+    setEmailInputState({
+      ...emailInputState,
+      wasEmailFieldTouched: true,
+      isEnteredEmailValid: true,
+    });
+  };
+  const handleBlur = (event) => {
+    setEmailInputState({
+      ...emailInputState,
+      isEnteredEmailValid: validateEmail(emailValue),
+    });
+  };
+  const isEnteredEmailInValid =
+    !emailInputState.isEnteredEmailValid && emailInputState.wasEmailFieldTouched;
 
   return (
     <>
@@ -68,13 +108,15 @@ const EmailInput = (props) => {
         labelText=""
         placeholder="Entre com o seu email"
         invalid={isEnteredEmailInValid}
-        invalidText="Coloque um email válido!"
+        invalidText="Coloque um email válido!" // TODO: implementar feedbacks de acordo com o erro
         size={"lg"}
         type="text"
-        onChange={handleChangeEmail}
         helperText="Ex: example@example.com.br"
+        onChange={handleChangeEmail}
+        onKeyPress={handleKeyPress}
         onFocus={handleFocus}
         onBlur={handleBlur}
+        autoFocus={false}
       />
       <Button
         className={styles["form-button"]}
@@ -82,7 +124,7 @@ const EmailInput = (props) => {
         renderIcon={ArrowRight}
         type="button"
         onClick={handleClick}>
-        Continue
+        Continuar
       </Button>
       <Checkbox
         className={styles["remember-me-checkbox"]}
@@ -93,7 +135,14 @@ const EmailInput = (props) => {
       <Section level={6}>
         <Heading className={styles["heading-font"]}>Logins Alternativos</Heading>
       </Section>
-      <Button renderIcon={Google} className={styles["form-button"]} kind={"tertiary"}>
+      <Button
+        renderIcon={Google}
+        className={styles["form-button"]}
+        kind={"tertiary"}
+        disabled={!googleOauthUrl}
+        onClick={() => {
+          window.location.href = googleOauthUrl;
+        }}>
         Login com Google
       </Button>
       <Button renderIcon={Outlook} className={styles["form-button"]} kind={"tertiary"}>
@@ -109,4 +158,4 @@ const EmailInput = (props) => {
   );
 };
 
-export default EmailInput;
+export default EmailInputField;
