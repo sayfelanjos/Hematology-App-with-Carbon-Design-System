@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: users.ExamplesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.27 s <<< FAILURE! - in users.ExamplesTest
+testParallel  Time elapsed: 3.253 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+http call failed after 262 milliseconds for url: http://localhost:4007/auth/signin
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:4007 [localhost/127.0.0.1] failed: Connection refused
+classpath:users/feature/Auth.feature:9
+http call failed after 262 milliseconds for url: http://localhost:4007/auth/signin
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:4007 [localhost/127.0.0.1] failed: Connection refused
+classpath:users/feature/Authentication.feature:9 ==> expected: <0> but was: <2>
+	at users.ExamplesTest.testParallel(UsersApiTesting.java:15)
+

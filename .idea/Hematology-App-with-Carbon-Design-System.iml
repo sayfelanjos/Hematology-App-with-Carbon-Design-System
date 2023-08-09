@@ -5,6 +5,12 @@
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/.idea/httpRequests" />
+      <excludeFolder url="file://$MODULE_DIR$/contracts/contracts-ms/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/shell/shell-mf/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/supplies/supplies-ms/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/users/.idea/dataSources" />
+      <excludeFolder url="file://$MODULE_DIR$/users/users-ms/.idea" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

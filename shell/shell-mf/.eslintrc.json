@@ -13,5 +13,13 @@
   },
   "rules": {
     "react/prop-types": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.test.js"],
+      "extends": [
+        "plugin:testing-library/react"
+      ]
+    }
+  ]
 }

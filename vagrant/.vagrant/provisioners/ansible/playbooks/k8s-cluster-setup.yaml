@@ -1,0 +1,95 @@
+---
+- name: Initial setup to Kubernetes cluster on GCP
+  hosts: k8s_cluster
+  become: true
+  tasks:
+    - name: Update packages and install Kubernetes cluster
+      block:
+        - name: Install Containerd
+          ansible.builtin.apt:
+            pkg:
+              - containerd
+            force_apt_get: true
+            update_cache: true
+            state: latest
+        - name: Configure Containerd
+          ansible.builtin.file:
+            path: /etc/containerd
+            state: directory
+            mode: "0755"
+
+        - name: Generate containerd default configuration
+          ansible.builtin.shell: containerd config default
+          register: config_output
+
+        - name: Print containerd config output to a file
+          ansible.builtin.copy:
+            content: "{{config_output.stdout}}"
+            dest: /etc/containerd/config.toml
+
+        - name: Change config.toml file
+          ansible.builtin.lineinfile:
+            path: /etc/containerd/config.toml
+            # The String to Search
+            regexp: "SystemdCgroup = false"
+            # The String to Replace
+            line: "SystemdCgroup = true"
+            state: present
+            backup: yes
+
+        - name: Change sysctl.conf file
+          ansible.builtin.lineinfile:
+            path: /etc/sysctl.conf
+            # The String to Search
+            regexp: "#net.ipv4.ip_forward=1"
+            # The String to Replace
+            line: "net.ipv4.ip_forward=1"
+            state: present
+            backup: yes
+
+        - name: Create k8s.conf file
+          ansible.builtin.file:
+            path: /etc/modules-load.d/k8s.conf
+            state: touch
+            mode: "0755"
+
+        - name: Put configuration to a variable
+          ansible.builtin.command:
+            cmd: echo "br_netfilter"
+          register: k8s_conf_output
+
+        - name: Copy variable content to file
+          ansible.builtin.copy:
+            content: "{{k8s_conf_output.stdout}}"
+            dest: /etc/modules-load.d/k8s.conf
+
+        - name: Reboot machine
+          ansible.builtin.reboot:
+
+        - name: Add Kubernetes official GPG key
+          ansible.builtin.apt_key:
+            url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+            state: present
+
+        - name: Add Kubernetes to Repository
+          ansible.builtin.apt_repository:
+            repo: deb https://apt.kubernetes.io/ kubernetes-xenial main
+            state: present
+
+        - name: Update apt and Install Kubernetes
+          ansible.builtin.apt:
+            pkg:
+              - kubeadm
+              - kubectl
+              - kubelet
+            force_apt_get: true
+            update_cache: true
+            state: latest
+
+- name: Initiate Kubernetes Cluster
+  hosts: k8s_control_plane
+  become: true
+  tasks:
+    - name: Start Kubernetes Control Plane
+      ansible.builtin.shell:
+        cmd: kubeadm init --control-plane-endpoint=192.168.56.3 --node-name k8s-control-plane --pod-network-cidr=10.244.0.0/16 # TODO: need to switch ip by dns
