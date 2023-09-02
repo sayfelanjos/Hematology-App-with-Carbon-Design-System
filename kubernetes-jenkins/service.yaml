@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jenkins-controller
+  namespace: devops-devops
+  labels:
+    app: jenkins-controller
+spec:
+  selector: 
+    app: jenkins-server
+  type: ClusterIP  
+  ports:
+    - port: 8080
+      protocol: TCP
+      targetPort: 8080

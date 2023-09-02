@@ -1,0 +1,12 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding: 2.4rem 12.5% 0 12.5%;
+}
+.list__main-content {
+  background: #ffffff;
+  border-radius: 1rem;
+}
+
+/*# sourceMappingURL=UsersTable.module.css.map */

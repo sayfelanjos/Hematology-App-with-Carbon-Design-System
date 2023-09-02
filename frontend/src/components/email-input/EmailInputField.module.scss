@@ -1,0 +1,30 @@
+.input-label {
+  display: flex;
+  justify-content: space-between;
+  font-family: inherit;
+  font-size: 0.875rem;
+}
+
+.form-button {
+  width: 20rem;
+}
+
+.remember-me-checkbox {
+  margin-bottom: 0 !important;
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.sidenav-divider {
+  margin-left: 0;
+  margin-right: 0;
+
+  &::marker {
+    content: "";
+  }
+}
+
+.heading-font {
+  font: inherit;
+  font-size: 0.875rem;
+}
