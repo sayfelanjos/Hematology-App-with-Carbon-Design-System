@@ -1,8 +1,0 @@
----
-- name: Install Let's Encrypt certificates on Jenkins Controller
-  hosts: jenkins_controller
-  become: true
-  tasks:
-    - name: Create Let's Encrypt home directory
-      ansible.builtin.command:
-        cmd: mkdir -p ~/letsencrypt/{certs,logs,work}
