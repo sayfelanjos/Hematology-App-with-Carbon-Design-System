@@ -1,4 +1,4 @@
-!/**/**/node_modules
+!**/**/node_modules/
 **/**/.idea
 **/**/.vscode
 **/**/dist
@@ -8,7 +8,6 @@
 **/**/.development.env
 **/**/.kpt-pipeline
 !/architecture/.$*.drawio.bkp
-!/.dockerignore
 !/terraform/azure/.terraform.lock.hcl
 !/terraform/gcp/terraform.json
 !/vagrant/.vagrant
