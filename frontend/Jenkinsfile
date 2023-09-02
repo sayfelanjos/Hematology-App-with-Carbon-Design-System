@@ -1,0 +1,19 @@
+pipeline {
+  agent {
+    dockerfile {
+		  filename 'dockerfile-jenkins-agent'
+		}
+  }
+  stages {
+    stage('Installing dependencies') {
+      steps {
+        sh "npm install"
+      }
+    }
+    stage('Build') {
+      steps {
+        sh 'npm run build'
+      }
+    }
+  }
+}
