@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hematology-app-load-balancer
+  annotations:
+    service.beta.kubernetes.io/do-loadbalancer-size-unit: "2"
+    service.beta.kubernetes.io/do-loadbalancer-disable-lets-encrypt-dns-records: "true"
+spec:
+  type: LoadBalancer
+  selector:
+    app: hematology-app-load-balancer
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80
