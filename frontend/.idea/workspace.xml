@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e21e6e94-0e32-454f-9123-2f60f666748c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.idea/dataSources/f3a35e09-0787-443d-a70b-c6d90af3c8b4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/dataSources/f3a35e09-0787-443d-a70b-c6d90af3c8b4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../architecture.dio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../go/hello.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login-panel/LoginPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login-panel/LoginPanel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack/webpack-dev.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../users/users-mf/k8s/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../users/users-mf/k8s/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../users/users-mf/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../users/users-mf/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vagrant/.vagrant/machines/k8s_control_plane/virtualbox/action_provision" beforeDir="false" afterPath="$PROJECT_DIR$/../../vagrant/.vagrant/machines/k8s_control_plane/virtualbox/action_provision" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vagrant/.vagrant/machines/k8s_control_plane/virtualbox/action_set_name" beforeDir="false" afterPath="$PROJECT_DIR$/../../vagrant/.vagrant/machines/k8s_control_plane/virtualbox/action_set_name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vagrant/.vagrant/machines/k8s_control_plane/virtualbox/id" beforeDir="false" afterPath="$PROJECT_DIR$/../../vagrant/.vagrant/machines/k8s_control_plane/virtualbox/id" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vagrant/.vagrant/machines/k8s_control_plane/virtualbox/index_uuid" beforeDir="false" afterPath="$PROJECT_DIR$/../../vagrant/.vagrant/machines/k8s_control_plane/virtualbox/index_uuid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vagrant/.vagrant/machines/k8s_control_plane/virtualbox/private_key" beforeDir="false" afterPath="$PROJECT_DIR$/../../vagrant/.vagrant/machines/k8s_control_plane/virtualbox/private_key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vagrant/.vagrant/machines/k8s_node_01/virtualbox/action_provision" beforeDir="false" afterPath="$PROJECT_DIR$/../../vagrant/.vagrant/machines/k8s_node_01/virtualbox/action_provision" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vagrant/.vagrant/machines/k8s_node_01/virtualbox/action_set_name" beforeDir="false" afterPath="$PROJECT_DIR$/../../vagrant/.vagrant/machines/k8s_node_01/virtualbox/action_set_name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vagrant/.vagrant/machines/k8s_node_01/virtualbox/id" beforeDir="false" afterPath="$PROJECT_DIR$/../../vagrant/.vagrant/machines/k8s_node_01/virtualbox/id" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vagrant/.vagrant/machines/k8s_node_01/virtualbox/index_uuid" beforeDir="false" afterPath="$PROJECT_DIR$/../../vagrant/.vagrant/machines/k8s_node_01/virtualbox/index_uuid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vagrant/.vagrant/machines/k8s_node_01/virtualbox/private_key" beforeDir="false" afterPath="$PROJECT_DIR$/../../vagrant/.vagrant/machines/k8s_node_01/virtualbox/private_key" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="minikube" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: -1
+}</component>
+  <component name="ProjectId" id="2NqHOEf6LAXVg2mhfqFQpVVuNuK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ACTIVE_CLOUD_PROJECT_ACCOUNT": "s244277@dac.unicamp.br",
+    "ACTIVE_CLOUD_PROJECT_ID": "hematologyapp",
+    "ACTIVE_CLOUD_PROJECT_NAME": "HematologyApp",
+    "ACTIVE_CLOUD_PROJECT_NUMBER": "466663207078",
+    "NewWatcherDialog.advanced.open": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.google.cloudcode.ide_session_index": "20230819_0000",
+    "git-widget-placeholder": "development",
+    "javascript.nodejs.core.library.configured.version": "20.5.0",
+    "javascript.nodejs.core.library.typings.version": "20.5.0",
+    "js.linters.configure.manually.selectedeslint": "true",
+    "last_opened_file_path": "/home/saymon/Backup/Portifolio/Hematology-App-with-Carbon-Design-System",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "/home/saymon/Backup/Portifolio/Hematology-App/shell/shell-mf/node_modules/eslint",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.stylelint": "/home/saymon/Backup/Portifolio/Hematology-App-with-Carbon-Design-System/shell/shell-mf/node_modules/stylelint",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/home/saymon/Backup/Portifolio/Hematology-App/shell/shell-mf/node_modules/prettier",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "/opt/webstorm/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/pages/login/user-input-form" />
+      <recent name="$PROJECT_DIR$/src/pages/login/right-panel" />
+      <recent name="$PROJECT_DIR$/src/pages/login/password-input-form" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.shell-mf:debug">
+    <configuration name="shell-mf:debug" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="shell-mf" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="supplies-mf:start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/../../supplies/supplies-mf/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.shell-mf:debug" />
+      <item itemvalue="npm.supplies-mf:start" />
+      <item itemvalue="npm.shell-mf" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e21e6e94-0e32-454f-9123-2f60f666748c" name="Changes" comment="" />
+      <created>1680384657878</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680384657878</updated>
+      <workItem from="1680384660746" duration="31000" />
+      <workItem from="1680386171491" duration="11264000" />
+      <workItem from="1680399903818" duration="490000" />
+      <workItem from="1680898608405" duration="547000" />
+      <workItem from="1683489695163" duration="8000" />
+      <workItem from="1685125843982" duration="527000" />
+      <workItem from="1685153641780" duration="229000" />
+      <workItem from="1686455948072" duration="3279000" />
+      <workItem from="1686459263817" duration="849000" />
+      <workItem from="1686488080693" duration="26438000" />
+      <workItem from="1686525914456" duration="599000" />
+      <workItem from="1686531268350" duration="92000" />
+      <workItem from="1686774428725" duration="1507000" />
+      <workItem from="1686779494999" duration="10095000" />
+      <workItem from="1686830443855" duration="26236000" />
+      <workItem from="1686912648360" duration="26671000" />
+      <workItem from="1686956401540" duration="16486000" />
+      <workItem from="1686975549277" duration="2244000" />
+      <workItem from="1687011734375" duration="4100000" />
+      <workItem from="1687015859245" duration="15591000" />
+      <workItem from="1687055210556" duration="5825000" />
+      <workItem from="1687098694971" duration="594000" />
+      <workItem from="1687361980740" duration="6649000" />
+      <workItem from="1687431481790" duration="11527000" />
+      <workItem from="1687895598355" duration="2106000" />
+      <workItem from="1688442879882" duration="95000" />
+      <workItem from="1688676665479" duration="9227000" />
+      <workItem from="1692399602896" duration="5401000" />
+      <workItem from="1692447243883" duration="620000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

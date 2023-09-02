@@ -1,0 +1,15 @@
+{
+  "name": "passport-nest",
+  "version": "1.0.0",
+  "description": "Works with Nest authentication strategy for Passport",
+  "licenses": [ {
+    "type": "Apache-2.0",
+    "url": "http://www.apache.org/licenses/LICENSE-2.0"
+  } ],
+  "main": "./lib/passport-nest",
+  "dependencies": {
+    "passport-oauth": "1.x.x",
+    "pkginfo": "0.3.x"
+   },
+  "engines": { "node": ">= 0.10" }
+}
