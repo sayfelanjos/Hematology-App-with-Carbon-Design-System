@@ -1,0 +1,15 @@
+.submit-btn {
+  display: flex;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.button-set {
+  justify-content: flex-end;
+  margin-right: 1rem;
+}

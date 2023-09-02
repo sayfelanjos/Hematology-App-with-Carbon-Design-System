@@ -1,0 +1,44 @@
+.heading-section-name {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.button-set {
+  align-items: center;
+}
+
+%btn-color-theme {
+  width: 14rem;
+  padding: 0 1rem;
+}
+
+.btn-color-theme {
+  &__white {
+    @extend %btn-color-theme;
+
+    background-color: #fff;
+    color: #161616;
+  }
+
+  &__g10 {
+    @extend %btn-color-theme;
+
+    background-color: #f4f4f4;
+    color: #161616;
+  }
+
+  &__g90 {
+    @extend %btn-color-theme;
+
+    background-color: #262626;
+    color: #f4f4f4;
+
+  }
+
+  &__g100 {
+    @extend %btn-color-theme;
+
+    background-color: #161616;
+    color: #f4f4f4;
+  }
+}

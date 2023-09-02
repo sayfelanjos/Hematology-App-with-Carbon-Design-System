@@ -1,0 +1,15 @@
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+  height: fit-content;
+  background-color: white;
+  box-shadow: 0 1px 5px #262f5c;
+  border-radius: 10px;
+  &__row {
+    display: flex;
+    flex-direction: row;
+    padding: 0 2rem 0 0;
+    flex-wrap: wrap;
+  }
+}
