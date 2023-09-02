@@ -9,7 +9,6 @@
 **/**/.kpt-pipeline
 !/architecture/.$*.drawio.bkp
 !/.dockerignore
-!/.gitignore
 !/terraform/azure/.terraform.lock.hcl
 !/terraform/gcp/terraform.json
 !/vagrant/.vagrant
