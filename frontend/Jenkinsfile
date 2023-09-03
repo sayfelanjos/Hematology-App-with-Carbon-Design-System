@@ -15,9 +15,7 @@ pipeline {
     }
     stage("Unit test") {
       steps {
-	      sh """npm run test \
-	            -v --junitxml=junit.xml \
-	            --cov-report xml --cov frontend/"""
+	      sh "npm run test"
 	    }
     }
     stage("Build") {
@@ -28,10 +26,10 @@ pipeline {
       }
     }
   }
-  post {
-      always {
-        junit 'junit.xml'
-        cobertura coberturaReportFile: 'coverage.xml'
-      }
-  }
+//  post {
+//      always {
+//        junit 'junit.xml'
+//        cobertura coberturaReportFile: 'coverage.xml'
+//      }
+//  }
 }
