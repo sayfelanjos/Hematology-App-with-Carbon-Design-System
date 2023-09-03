@@ -18,6 +18,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "testAndCoverage": "jest --coverage --coverageDirectory=jest/coverage",
     "test": "react-scripts test --runInBand --verbose --watchAll=false",
     "eject": "react-scripts eject"
   },
