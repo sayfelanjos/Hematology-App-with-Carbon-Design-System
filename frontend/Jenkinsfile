@@ -16,7 +16,10 @@ pipeline {
     stage("Unit test") {
       steps {
         dir("frontend") {
-          sh "npm run test"
+          sh  """npm run test \
+              -v --junitxml=junit.xml \
+              --cov-report xml --cov frontend/
+          """
         }
 	    }
     }
