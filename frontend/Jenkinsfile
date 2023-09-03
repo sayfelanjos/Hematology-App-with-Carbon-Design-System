@@ -1,3 +1,4 @@
+#!/bin/groovy
 pipeline {
   agent {
     dockerfile {
@@ -12,6 +13,13 @@ pipeline {
         }
       }
     }
+    stage("Unit test") {
+      steps {
+	      sh """npm run test \
+	            -v --junitxml=junit.xml \
+	            --cov-report xml --cov frontend/"""
+	    }
+    }
     stage("Build") {
       steps {
         dir("frontend") {
@@ -19,5 +27,11 @@ pipeline {
         }
       }
     }
+  }
+  post {
+      always {
+        junit 'junit.xml'
+        cobertura coberturaReportFile: 'coverage.xml'
+      }
   }
 }
