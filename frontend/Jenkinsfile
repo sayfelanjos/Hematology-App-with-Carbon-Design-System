@@ -1,22 +1,23 @@
 pipeline {
   agent {
-    docker { image 'node:18.17.1' }
+    dockerfile {
+		  filename 'frontend/dockerfile-jenkins-agent'
+		}
   }
   stages {
-    stage('Requirements') {
+    stage('Install dependencies') {
       steps {
-        dir('frontend') {
-          sh "sudo chown -R 113:121 "/.npm""
-          sh 'npm install'
+        dir("frontend") {
+          sh  "rm -r node_modules && npm install"
         }
       }
     }
-      stage('Build') {
-        steps {
-          dir('frontend') {
-            sh 'npm run build'
-          }
+    stage('Build') {
+      steps {
+        dir("frontend") {
+          sh "rm -f build && npm run build"
         }
       }
+    }
   }
 }
