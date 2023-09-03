@@ -15,7 +15,9 @@ pipeline {
     }
     stage("Unit test") {
       steps {
-	      sh "npm run test"
+        dir("frontend") {
+          sh "npm run test"
+        }
 	    }
     }
     stage("Build") {
