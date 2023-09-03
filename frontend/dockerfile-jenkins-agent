@@ -11,6 +11,5 @@ RUN apt-get update -yq && \
 		apt-get update && \
 		apt-get install nodejs -y
 
-WORKDIR ~/
-
-COPY . .
+RUN adduser --disabled-password --gecos "" \
+    --uid 113 --shell /bin/bash jenkins
