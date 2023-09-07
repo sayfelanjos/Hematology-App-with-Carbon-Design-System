@@ -10,7 +10,7 @@ export class GoogleSingleSignOnController {
   ) {}
 
   @Get("/url")
-  googleOauthUrl(): Object {
+  googleOauthUrl(): object {
     return { url: this.googleSingleSignOnService.getGoogleOauthUrl() };
   }
 

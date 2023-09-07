@@ -43,7 +43,6 @@ export class GoogleSingleSignOnService {
         Authorization: `Bearer ${tokens.id_token}`,
       },
     });
-
     return await response.json();
   }
 
