@@ -1,24 +1,23 @@
-//{
-//  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
-//  "parserOptions": {
-//    "sourceType": "module",
-//    "ecmaVersion": 2022
-//  },
-//  "env": {
-//    "browser": true,
-//    "amd": true,
-//    "node": true,
-//    "es2021": true,
-//    "jest": true
-//  },
-//  "rules": {
-//    "react/prop-types": "off"
-//  },
-//  "overrides": [
-//    {
-//      "files": ["*.test.js"],
-//      "extends": ["plugin:testing-library/react"]
-//    }
-//  ]
-//}
-{}
+{
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2022
+  },
+  "env": {
+    "browser": true,
+    "amd": true,
+    "node": true,
+    "es2021": true,
+    "jest": true
+  },
+  "rules": {
+    "react/prop-types": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.test.js"],
+      "extends": ["plugin:testing-library/react"]
+    }
+  ]
+}
