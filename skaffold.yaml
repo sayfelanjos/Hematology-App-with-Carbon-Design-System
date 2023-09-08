@@ -3,67 +3,44 @@ kind: Config
 metadata:
   name: hematology-app
 requires:
-  # Micro Frontends
-
-  - configs: ["contracts-mf"]
-    path: contracts/contracts-mf/skaffold.yaml
-  - configs: ["statistics-mf"]
-    path: statistics/statistics-mf/skaffold.yaml
-  - configs: ["invoices-mf"]
-    path: invoices/invoices-mf/skaffold.yaml
-  - configs: ["orders-mf"]
-    path: orders/orders-mf/skaffold.yaml
-  - configs: ["supplies-mf"]
-    path: supplies/supplies-mf/skaffold.yaml
-  - configs: ["customers-and-suppliers-mf"]
-    path: customers-and-suppliers/customers-and-suppliers-mf/skaffold.yaml
-  - configs: ["users-mf"]
-    path: users/users-mf/skaffold.yaml
-  - configs: ["shell-mf"]
-    path: shell/shell-mf/skaffold.yaml
+  # Frontend
+  - configs: ["frontend-del-mf"]
+    path: frontend-del/frontend-del-mf/skaffold.yaml
 
   # Micro Services
 
-  #  - configs: ["contracts-ms"]
-  #    path: contracts/contracts-ms/skaffold.yaml
-  #  - configs: ["statistics-ms"]
-  #    path: statistics/statistics-ms/skaffold.yaml
-  #  - configs: ["invoices-ms"]
-  #    path: invoices/invoices-ms/skaffold.yaml
-  #  - configs: ["orders-ms"]
-  #    path: orders/orders-ms/skaffold.yaml
-  #  - configs: ["supplies-ms"]
-  #    path: supplies/supplies-ms/skaffold.yaml
-  #  - configs: ["customers-and-suppliers-ms"]
-  #    path: customers-and-suppliers/customers-and-suppliers-ms/skaffold.yaml
+  - configs: ["contracts-ms"]
+    path: contracts/contracts-ms/skaffold.yaml
+  - configs: ["statistics-ms"]
+    path: statistics/statistics-ms/skaffold.yaml
+  - configs: ["invoices-ms"]
+    path: invoices/invoices-ms/skaffold.yaml
+  - configs: ["orders-ms"]
+    path: orders/orders-ms/skaffold.yaml
+  - configs: ["supplies-ms"]
+    path: supplies/supplies-ms/skaffold.yaml
+  - configs: ["customers-and-suppliers-ms"]
+    path: customers-and-suppliers/customers-and-suppliers-ms/skaffold.yaml
   - configs: ["users-ms"]
     path: users/users-ms/skaffold.yaml
-#  - configs: ["shell-ms"]
-#    path: shell/shell-ms/skaffold.yaml
+  - configs: ["frontend-del-ms"]
+    path: frontend-del/frontend-del-ms/skaffold.yaml
 
   # Databases
+
   - configs: ["contracts-db"]
     path: contracts/contracts-db/skaffold.yaml
-  #  - configs: ["statistics-db"]
-  #    path: statistics/statistics-db/skaffold.yaml
-  #  - configs: ["invoices-db"]
-  #    path: invoices/invoices-db/skaffold.yaml
-  #  - configs: ["orders-db"]
-  #    path: orders/orders-db/skaffold.yaml
-  #  - configs: ["supplies-db"]
-  #    path: supplies/supplies-db/skaffold.yaml
-  #  - configs: ["customers-and-suppliers-db"]
-  #    path: customers-and-suppliers/customers-and-suppliers-db/skaffold.yaml
+  - configs: ["statistics-db"]
+    path: statistics/statistics-db/skaffold.yaml
+  - configs: ["invoices-db"]
+    path: invoices/invoices-db/skaffold.yaml
+  - configs: ["orders-db"]
+    path: orders/orders-db/skaffold.yaml
+  - configs: ["supplies-db"]
+    path: supplies/supplies-db/skaffold.yaml
+  - configs: ["customers-and-suppliers-db"]
+    path: customers-and-suppliers/customers-and-suppliers-db/skaffold.yaml
   - configs: ["users-db"]
     path: users/users-db/skaffold.yaml
-#  - configs: ["shell-db"]
-#    path: shell/shell-db/skaffold.yaml
-
-  # State Management
-  - configs: ["global-store"]
-    path: global-store/skaffold.yaml
-
-test:
-  - image: shell-mf
-    custom:
-      - command: echo This is a custom test commmand!
+  - configs: ["frontend-del-db"]
+    path: frontend-del/frontend-del-db/skaffold.yaml

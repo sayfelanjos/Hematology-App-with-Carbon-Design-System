@@ -1,9 +1,0 @@
-.idea
-k8s
-node_modules
-.dockerignore
-.gitignore
-Dockerfile
-package-lock.json
-README.md
-skaffold.yaml

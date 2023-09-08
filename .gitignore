@@ -1,2 +1,15 @@
-**/**/.terraform
-**/**/.vagrant
+**/**/node_modules
+**/**/.idea
+**/**/.vscode
+**/**/dist
+**/**/build
+**/**/.env
+**/**/.production.env
+**/**/.development.env
+**/**/.kpt-pipeline
+!/architecture/.$*.drawio.bkp
+!/frontend/.dockerignore
+!/terraform/azure/.terraform.lock.hcl
+!/terraform/gcp/.terraform.lock.hcl
+!/terraform/gcp/terraform.json
+!/vagrant/.vagrant

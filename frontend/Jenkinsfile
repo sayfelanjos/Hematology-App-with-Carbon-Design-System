@@ -1,0 +1,42 @@
+#!/bin/groovy
+pipeline {
+  agent {
+    dockerfile {
+		  filename "frontend/dockerfile-jenkins-agent"
+		}
+  }
+  stages {
+    stage("Install dependencies") {
+      steps {
+        dir("frontend") {
+          sh "npm install"
+        }
+      }
+    }
+    stage("Unit test") {
+      steps {
+        dir("frontend") {
+          sh  "npm run testAndCoverage"
+        }
+	    }
+	    post {
+        always {
+          step([$class: 'CoberturaPublisher', coberturaReportFile: 'jest/coverage/cobertura-coverage.xml'])
+        }
+      }
+    }
+    stage("Build") {
+      steps {
+        dir("frontend") {
+          sh "npm run build"
+        }
+      }
+    }
+  }
+//  post {
+//      always {
+//        junit 'build/coverage/clover.xml'
+//        cobertura coberturaReportFile: 'coverage.xml'
+//      }
+//  }
+}
