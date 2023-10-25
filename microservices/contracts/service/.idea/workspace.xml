@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="374ca9b5-091b-40d5-b9c3-2b2e05885420" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/dataSources/1d7828ea-2704-4e09-8599-27e58c3dfbeb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/dataSources/1d7828ea-2704-4e09-8599-27e58c3dfbeb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/dataSources/f3a35e09-0787-443d-a70b-c6d90af3c8b4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/dataSources/f3a35e09-0787-443d-a70b-c6d90af3c8b4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/dataSources/f3a35e09-0787-443d-a70b-c6d90af3c8b4/storage_v2/_src_/database/users-db.Ywor8A/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/dataSources/f3a35e09-0787-443d-a70b-c6d90af3c8b4/storage_v2/_src_/database/users-db.Ywor8A/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/dataSources/f67654c0-a846-4db1-8cf8-241a3dc150c0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/dataSources/f67654c0-a846-4db1-8cf8-241a3dc150c0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/skaffold.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/skaffold.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../users/users-ms/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../../users/users-ms/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../users/users-ms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../users/users-ms/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../users/users-ms/skaffold.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../users/users-ms/skaffold.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../users/users-ms/src/app.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../users/users-ms/src/app.controller.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../users/users-ms/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../users/users-ms/src/app.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../users/users-ms/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../users/users-ms/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../users/users-ms/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../users/users-ms/src/app.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../users/users-ms/src/guards/auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../users/users-ms/src/guards/auth.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../users/users-ms/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../users/users-ms/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../users/users-ms/src/users/decorators/current-user.decorator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../users/users-ms/src/users/decorators/current-user.decorator.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../users/users-ms/src/users/dto/create-users.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../users/users-ms/src/users/dto/create-users.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../users/users-ms/src/users/users.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../users/users-ms/src/users/users.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../users/users-ms/src/users/users.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../users/users-ms/src/users/users.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../users/users-ms/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../users/users-ms/tsconfig.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="minikube" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2QqlMuqPUWV6wDBBxl9hbKB5dPY" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.google.cloudcode.ide_session_index": "20230607_0009",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/saymon/Backup/Portifolio/Hematology-App-with-Carbon-Design-System/contracts/contracts-ms",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "ts.external.directory.path": "/home/saymon/Backup/Portifolio/Hematology-App-with-Carbon-Design-System/contracts/contracts-ms/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Attach to Node.js/Chrome.contracts-ms:debug">
+    <configuration name="contracts-ms:debug" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="9229">
+      <method v="2">
+        <option name="LaunchBrowser.Before.Run" browser="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" url="localhost:4006" />
+      </method>
+    </configuration>
+    <configuration name="start:debug" type="js.build_tools.npm" temporary="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:debug" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Attach to Node.js/Chrome.contracts-ms:debug" />
+      <item itemvalue="npm.start:debug" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start:debug" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="374ca9b5-091b-40d5-b9c3-2b2e05885420" name="Changes" comment="" />
+      <created>1686088947409</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686088947409</updated>
+      <workItem from="1686088948504" duration="326000" />
+      <workItem from="1686089299370" duration="200000" />
+      <workItem from="1686089522231" duration="243000" />
+      <workItem from="1686089787096" duration="251000" />
+      <workItem from="1686090073037" duration="184000" />
+      <workItem from="1686090277629" duration="1188000" />
+      <workItem from="1686093511522" duration="691000" />
+      <workItem from="1686094225693" duration="743000" />
+      <workItem from="1686094990867" duration="71000" />
+      <workItem from="1686095083248" duration="3320000" />
+      <workItem from="1686098450312" duration="154000" />
+      <workItem from="1686100580224" duration="2475000" />
+      <workItem from="1686133553393" duration="3410000" />
+      <workItem from="1686140258985" duration="345000" />
+      <workItem from="1686140753608" duration="259000" />
+      <workItem from="1686142471356" duration="14000" />
+      <workItem from="1686142498384" duration="156000" />
+      <workItem from="1686142723337" duration="144000" />
+      <workItem from="1686143261873" duration="2737000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

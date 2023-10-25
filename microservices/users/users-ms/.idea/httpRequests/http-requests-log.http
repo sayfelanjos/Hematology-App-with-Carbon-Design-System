@@ -1,0 +1,330 @@
+GET http://localhost:4007/auth/whoami
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjIsInVzZXJJZCI6Mn0=; session.sig=bmmua0nkz3xu7WMRvxvPjSJzj7c
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-22T100702.200.json
+
+###
+
+POST http://localhost:4007/auth/signin
+content-type: application/json
+Content-Length: 65
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjIsInVzZXJJZCI6Mn0=; session.sig=bmmua0nkz3xu7WMRvxvPjSJzj7c
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "saymonfelipe@hotmail.com",
+  "password": "sayfel"
+}
+
+<> 2023-06-21T230504.201.json
+
+###
+
+POST http://localhost:4007/auth/signin
+content-type: application/json
+Content-Length: 65
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjIsInVzZXJJZCI6Mn0=; session.sig=bmmua0nkz3xu7WMRvxvPjSJzj7c
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "saymonfelipe@hotmail.com",
+  "password": "sayfel"
+}
+
+<> 2023-06-21T213731.201.json
+
+###
+
+POST http://localhost:4007/auth/signup
+content-type: application/json
+Content-Length: 65
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjIsInVzZXJJZCI6Mn0=; session.sig=bmmua0nkz3xu7WMRvxvPjSJzj7c
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "saymonfelipe@hotmail.com",
+  "password": "sayfel"
+}
+
+<> 2023-06-21T190417.400.json
+
+###
+
+POST http://localhost:4007/auth/signin
+content-type: application/json
+Content-Length: 65
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjIsInVzZXJJZCI6Mn0=; session.sig=bmmua0nkz3xu7WMRvxvPjSJzj7c
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "saymonfelipe@hotmail.com",
+  "password": "sayfel"
+}
+
+<> 2023-06-21T190317.201.json
+
+###
+
+GET http://localhost:4007/auth/whoami
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjIsInVzZXJJZCI6Mn0=; session.sig=bmmua0nkz3xu7WMRvxvPjSJzj7c
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-17T232548.200.json
+
+###
+
+GET http://localhost:4007/auth/whoami
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjIsInVzZXJJZCI6Mn0=; session.sig=bmmua0nkz3xu7WMRvxvPjSJzj7c
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-17T232443.200.json
+
+###
+
+POST http://localhost:4007/auth/signin
+content-type: application/json
+Content-Length: 65
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjJ9; session.sig=8gAhdsgxwqAB-9s6A-vrQmEvCjM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "saymonfelipe@hotmail.com",
+  "password": "sayfel"
+}
+
+<> 2023-06-17T232438.201.json
+
+###
+
+GET http://localhost:4007/auth/whoami
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjJ9; session.sig=8gAhdsgxwqAB-9s6A-vrQmEvCjM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4007/auth/whoami
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjJ9; session.sig=8gAhdsgxwqAB-9s6A-vrQmEvCjM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-06-17T231922.200.json
+
+###
+
+GET http://localhost:4007/auth/whoami
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjJ9; session.sig=8gAhdsgxwqAB-9s6A-vrQmEvCjM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4007/auth/whoami
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjJ9; session.sig=8gAhdsgxwqAB-9s6A-vrQmEvCjM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4007/auth/whoami
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjJ9; session.sig=8gAhdsgxwqAB-9s6A-vrQmEvCjM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4007/auth/whoami
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjJ9; session.sig=8gAhdsgxwqAB-9s6A-vrQmEvCjM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4007/auth/whoami
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjJ9; session.sig=8gAhdsgxwqAB-9s6A-vrQmEvCjM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4007/auth/whoami
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjJ9; session.sig=8gAhdsgxwqAB-9s6A-vrQmEvCjM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4007/auth/whoami
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjJ9; session.sig=8gAhdsgxwqAB-9s6A-vrQmEvCjM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:4007/auth/signin
+content-type: application/json
+Content-Length: 65
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjJ9; session.sig=8gAhdsgxwqAB-9s6A-vrQmEvCjM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "saymonfelipe@hotmail.com",
+  "password": "sayfel"
+}
+
+<> 2023-06-17T175421.201.json
+
+###
+
+POST http://localhost:4007/auth/signup
+content-type: application/json
+Content-Length: 65
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjJ9; session.sig=8gAhdsgxwqAB-9s6A-vrQmEvCjM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "saymonfelipe@hotmail.com",
+  "password": "sayfel"
+}
+
+<> 2023-06-17T175402.400.json
+
+###
+
+GET http://localhost:4007/auth/whoami
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjJ9; session.sig=8gAhdsgxwqAB-9s6A-vrQmEvCjM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4007/auth/whoami
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjJ9; session.sig=8gAhdsgxwqAB-9s6A-vrQmEvCjM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:4007/auth/signin
+content-type: application/json
+Content-Length: 65
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjJ9; session.sig=8gAhdsgxwqAB-9s6A-vrQmEvCjM
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "saymonfelipe@hotmail.com",
+  "password": "sayfel"
+}
+
+<> 2023-06-17T175146.201.json
+
+###
+
+POST http://localhost:4007/auth/signup
+content-type: application/json
+Content-Length: 65
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjF9; session.sig=fXYhWx_5vxZXnJ7BBLjfitNfeEU
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "saymonfelipe@hotmail.com",
+  "password": "sayfel"
+}
+
+<> 2023-06-17T175100.201.json
+
+###
+
+GET http://localhost:4007/auth/whoami
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjF9; session.sig=fXYhWx_5vxZXnJ7BBLjfitNfeEU
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4007/auth/whoami
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjF9; session.sig=fXYhWx_5vxZXnJ7BBLjfitNfeEU
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+GET http://localhost:4007/auth/whoami
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjF9; session.sig=fXYhWx_5vxZXnJ7BBLjfitNfeEU
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+
+POST http://localhost:4007/auth/signin
+content-type: application/json
+Content-Length: 64
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Cookie: session=eyJ1c2VyaWQiOjF9; session.sig=fXYhWx_5vxZXnJ7BBLjfitNfeEU
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "claudiney@outlook.com.br",
+  "password": "12345"
+}
+
+<> 2023-06-14T184829.201.json
+
+###
+
+POST http://localhost:4007/auth/signup
+content-type: application/json
+Content-Length: 64
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.6)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "email": "claudiney@outlook.com.br",
+  "password": "12345"
+}
+
+<> 2023-06-14T184823.201.json
+
+###
+

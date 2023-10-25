@@ -1,0 +1,33 @@
+openapi: 3.0.3
+info:
+  title: Clinic Pathology - Supplies Service API
+  description: Manage supplies of the Clinic Pathology of the Clinical Hospital of the Unicamp (HC).
+  version: 1.0.0
+servers:
+  - url: https://localhost:8081
+
+components:
+  schemas:
+    Product:
+      type: object
+      properties:
+        id:
+          type: integer
+          example: 1
+        name:
+          type: string
+          example: Reagent A
+      required:
+        id
+        name
+
+paths:
+  /products:
+    get:
+      responses:
+        '200':
+          description: This return a list of all products registered in the system.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Product'

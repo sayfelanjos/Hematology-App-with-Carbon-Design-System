@@ -1,0 +1,17 @@
+openapi: 3.0.3
+info:
+  title: Clinic Pathology API
+  description: Laboratory Information Management System (LIMS) of the
+    Clinical Hospital of the Unicamp (HC)
+  version: 1.0.0
+
+servers:
+  - url: localhost:1234
+    description: Development API Server
+
+paths:
+  /users:
+    $ref: "./routes/users.yaml"
+  /supplies:
+    $ref: "./routes/supplies.yaml"
+

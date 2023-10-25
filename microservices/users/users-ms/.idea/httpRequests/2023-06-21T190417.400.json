@@ -1,0 +1,5 @@
+{
+  "statusCode": 400,
+  "message": "email in use",
+  "error": "Bad Request"
+}

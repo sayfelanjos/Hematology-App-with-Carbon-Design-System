@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cc6ac22a-7177-401b-a6f7-52e31f01f9a4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/store/useLoginPanelStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../institutional/institutional-mf/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../institutional/institutional-mf/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/babel.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/babel.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/email-input/EmailInputField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/components/email-input/EmailInputField.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/layout/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/components/layout/Layout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/left-sidenav/LeftSideNav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/components/left-sidenav/LeftSideNav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/login-panel/LoginPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/components/login-panel/LoginPanel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/login-panel/LoginPanel.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/components/login-panel/LoginPanel.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/login-panel/LoginPanel.test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/components/login-panel/LoginPanel.test.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/password-input/PasswordInputField.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/components/password-input/PasswordInputField.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/password-input/PasswordInputField.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/components/password-input/PasswordInputField.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/profile-panel/ProfilePanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/components/profile-panel/ProfilePanel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/components/quick-settings-panel/QuickSettingsPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/src/components/quick-settings-panel/QuickSettingsPanel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/src/reducers/loginPanelReducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shell/shell-mf/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../shell/shell-mf/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../terraform.tfstate" beforeDir="false" afterPath="$PROJECT_DIR$/../../terraform.tfstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-mf/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../users-mf/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../users-mf/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../users-mf/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.development.env" beforeDir="false" afterPath="$PROJECT_DIR$/.development.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/auth.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.controller.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/auth.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/users.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/users.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/users.service.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="OpenAPI" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="minikube" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2QqV9vm5WFlk52l11K0TRsamgc2" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ACTIVE_CLOUD_PROJECT_ACCOUNT": "adm.acustica@acusticasomshop.com.br",
+    "ACTIVE_CLOUD_PROJECT_ID": "terraform-essential-guide",
+    "ACTIVE_CLOUD_PROJECT_NAME": "Terraform Essential Guide",
+    "ACTIVE_CLOUD_PROJECT_NUMBER": "968947252925",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.google.cloudcode.ide_session_index": "20230715_0011",
+    "git-widget-placeholder": "Add-user-authentication-with-JWT",
+    "last_opened_file_path": "/home/saymon/Backup/Portifolio/Hematology-App-with-Carbon-Design-System/shell/shell-mf",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "/home/saymon/Backup/Portifolio/Hematology-App-with-Carbon-Design-System/users/users-ms/node_modules/jest",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "swagger",
+    "ts.external.directory.path": "/home/saymon/Backup/Portifolio/Hematology-App-with-Carbon-Design-System/users/users-ms/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RunManager" selected="Wallaby.js.wallaby">
+    <configuration name="users-ms:debug" type="ChromiumRemoteDebugType" factoryName="Chromium Remote" port="9229">
+      <method v="2" />
+    </configuration>
+    <configuration name="request | Get the currently signed in User" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/request.http" index="3" requestIdentifier="Get the currently signed in User" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="request | Get the currently signed in user" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/request.http" index="3" requestIdentifier="Get the currently signed in user" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="request | Signin a user" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/request.http" index="2" requestIdentifier="Signin a user" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="request | Signup a new user" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/src/request.http" requestIdentifier="Signup a new user" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="SwaggerCodegen">
+      <option name="activeConfigurationType" value="FILE" />
+      <option name="configurationPath" value="" />
+      <option name="customJreEnabled" value="false" />
+      <option name="customTemplatesPath" value="" />
+      <option name="enableDebugLogging" value="false" />
+      <option name="generateToPath" value="$PROJECT_DIR$/gen" />
+      <option name="generationParameters">
+        <list />
+      </option>
+      <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0/openapi-generator-cli-5.0.0.jar" />
+      <option name="jdkPath" value="" />
+      <option name="language" value="java" />
+      <option name="specificationPath" value="$PROJECT_DIR$/src/users/users-ms.json" />
+      <method v="2" />
+    </configuration>
+    <configuration name="start:debug" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:debug" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start:dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="wallaby" type="wallaby" factoryName="wallaby" configType="Automatic" configFolder="$PROJECT_DIR$/src" wsl="No" SmartStart="Yes">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Attach to Node.js/Chrome.users-ms:debug" />
+      <item itemvalue="HTTP Request.request | Get the currently signed in user" />
+      <item itemvalue="HTTP Request.request | Get the currently signed in User" />
+      <item itemvalue="HTTP Request.request | Signin a user" />
+      <item itemvalue="HTTP Request.request | Signup a new user" />
+      <item itemvalue="npm.start:dev" />
+      <item itemvalue="npm.start:debug" />
+      <item itemvalue="Wallaby.js.wallaby" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.request | Get the currently signed in user" />
+        <item itemvalue="HTTP Request.request | Signin a user" />
+        <item itemvalue="HTTP Request.request | Signup a new user" />
+        <item itemvalue="npm.start:debug" />
+        <item itemvalue="HTTP Request.request | Get the currently signed in User" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc6ac22a-7177-401b-a6f7-52e31f01f9a4" name="Changes" comment="" />
+      <created>1686080950187</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686080950187</updated>
+      <workItem from="1686080951714" duration="5368000" />
+      <workItem from="1686520772341" duration="3202000" />
+      <workItem from="1686525899419" duration="2079000" />
+      <workItem from="1686531363577" duration="3087000" />
+      <workItem from="1686567312095" duration="539000" />
+      <workItem from="1686588248604" duration="742000" />
+      <workItem from="1686776231554" duration="6333000" />
+      <workItem from="1686830412913" duration="624000" />
+      <workItem from="1686911687509" duration="623000" />
+      <workItem from="1687032756270" duration="5983000" />
+      <workItem from="1687050383908" duration="5867000" />
+      <workItem from="1687098495241" duration="787000" />
+      <workItem from="1687113048190" duration="276000" />
+      <workItem from="1687113356645" duration="2081000" />
+      <workItem from="1687134573376" duration="2237000" />
+      <workItem from="1687171321726" duration="900000" />
+      <workItem from="1687361798787" duration="6254000" />
+      <workItem from="1687429786881" duration="3419000" />
+      <workItem from="1687517833946" duration="124000" />
+      <workItem from="1689396243441" duration="540000" />
+      <workItem from="1689396807558" duration="251000" />
+      <workItem from="1689397083926" duration="301000" />
+      <workItem from="1689397413393" duration="697000" />
+      <workItem from="1689398132652" duration="2489000" />
+      <workItem from="1689430175008" duration="7467000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

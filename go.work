@@ -1,0 +1,9 @@
+go 1.21.1
+
+use (
+	./microservices/api_gateway/service
+	./microservices/customers-and-suppliers/service
+	./microservices/orders/service
+	./microservices/supplies/service
+	./microservices/users/service
+)
