@@ -1,4 +1,4 @@
-package handler
+package http
 
 import (
 	"encoding/json"
@@ -8,9 +8,9 @@ import (
 	restdb "users/internal/controller"
 )
 
-// AddHandler is for adding a new user
-func AddHandler(rw http.ResponseWriter, r *http.Request) {
-	log.Println("AddHandler Serving:", r.URL.Path, "from", r.Host)
+// UpdateHandler is for updating the data of an existing user + PUT
+func UpdateHandler(rw http.ResponseWriter, r *http.Request) {
+	log.Println("UpdateHandler Serving:", r.URL.Path, "from", r.Host)
 	d, err := io.ReadAll(r.Body)
 	if err != nil {
 		rw.WriteHeader(http.StatusBadRequest)
@@ -24,9 +24,6 @@ func AddHandler(rw http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// We read two structures as an array:
-	// 1. The user issuing the command
-	// 2. The user to be added
 	var users = []restdb.User{}
 	err = json.Unmarshal(d, &users)
 	if err != nil {
@@ -35,16 +32,24 @@ func AddHandler(rw http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	log.Println(users)
-
 	if !restdb.IsUserAdmin(users[0]) {
 		log.Println("Command issued by non-admin user:", users[0].Username)
 		rw.WriteHeader(http.StatusBadRequest)
 		return
 	}
 
-	result := restdb.InsertUser(users[1])
-	if !result {
+	log.Println(users)
+	t := restdb.FindUserUsername(users[1].Username)
+	t.Username = users[1].Username
+	t.Password = users[1].Password
+	t.Admin = users[1].Admin
+
+	if !restdb.UpdateUser(t) {
+		log.Println("Update failed:", t)
 		rw.WriteHeader(http.StatusBadRequest)
+		return
 	}
+
+	log.Println("Update successful:", t)
+	rw.WriteHeader(http.StatusOK)
 }

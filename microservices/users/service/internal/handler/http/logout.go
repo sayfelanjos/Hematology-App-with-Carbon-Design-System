@@ -1,18 +1,18 @@
-package handler
+package http
 
 import (
 	"encoding/json"
 	"io"
 	"log"
 	"net/http"
-	"time"
 	restdb "users/internal/controller"
 )
 
-// LoginHandler is for updating the LastLogin time of a user
-// And changing the Active field to true
-func LoginHandler(rw http.ResponseWriter, r *http.Request) {
-	log.Println("LoginHandler Serving:", r.URL.Path, "from", r.Host)
+// LogoutHandler is for logging out a user
+// And changing the Active field to false
+func LogoutHandler(rw http.ResponseWriter, r *http.Request) {
+	log.Println("LogoutHandler Serving:", r.URL.Path, "from", r.Host)
+
 	d, err := io.ReadAll(r.Body)
 	if err != nil {
 		rw.WriteHeader(http.StatusBadRequest)
@@ -34,19 +34,15 @@ func LoginHandler(rw http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	log.Println("Input user:", user)
-
 	if !restdb.IsUserValid(user) {
-		log.Println("User", user.Username, "not valid!")
+		log.Println("User", user.Username, "exists!")
 		rw.WriteHeader(http.StatusBadRequest)
 		return
 	}
 
 	t := restdb.FindUserUsername(user.Username)
-	log.Println("Logging in:", t)
-
-	t.LastLogin = time.Now().Unix()
-	t.Active = 1
+	log.Println("Logging out:", t.Username)
+	t.Active = 0
 	if restdb.UpdateUser(t) {
 		log.Println("User updated:", t)
 		rw.WriteHeader(http.StatusOK)

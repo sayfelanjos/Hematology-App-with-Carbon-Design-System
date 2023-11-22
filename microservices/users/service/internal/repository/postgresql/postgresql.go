@@ -4,25 +4,29 @@ import (
 	"database/sql"
 	"fmt"
 	_ "github.com/lib/pq"
-	"pathology-clinic-unicamp/users/configs"
+	"log"
 )
 
-func InitDB(c *configs.Config) (*sql.DB, error) {
-	var connectionString = fmt.Sprintf("host=%s port=%d user=%s "+
-		"password=%s dbname=%s sslmode=disable",
-		c.DB.Host, c.DB.Port, c.DB.User, c.DB.Password, c.DB.Name)
-	var err error
-	db, err := sql.Open(c.DB.Driver, connectionString)
+// PostgreSQL Connection details
+//
+// We are using localhost as hostname because both
+// the utility and PostgreSQL run on the same machine
+var (
+	Hostname = "localhost"
+	Port     = 5432
+	Username = "postgres"
+	Password = "postgres"
+	Database = "users"
+)
 
-	if err != nil {
-		return nil, err
-	}
+// ConnectPostgres is for connect to the postgres database always that an operation is fired
+func ConnectPostgres() (*sql.DB, error) {
+	connectionString := fmt.Sprintf("host=%s port=%d user=%s password=%s dbname=%s sslmode=disable",
+		Hostname, Port, Username, Password, Database)
 
+	db, err := sql.Open("postgres", connectionString)
 	if err != nil {
-		return nil, err
-	}
-
-	if err != nil {
+		log.Println(err)
 		return nil, err
 	}
 

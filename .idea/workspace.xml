@@ -4,7 +4,38 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8ea180f-923d-4632-bf97-df2830d0f1c2" name="Changes" comment="" />
+    <list default="true" id="d8ea180f-923d-4632-bf97-df2830d0f1c2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/39d29473-0aaf-4b37-9eb1-b5b58f30160d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/39d29473-0aaf-4b37-9eb1-b5b58f30160d.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/39d29473-0aaf-4b37-9eb1-b5b58f30160d/storage_v2/_src_/database/auth.qN0tAA/schema/clinic_pathology.CG8pkg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/39d29473-0aaf-4b37-9eb1-b5b58f30160d/storage_v2/_src_/database/auth.qN0tAA/schema/clinic_pathology.CG8pkg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/39d29473-0aaf-4b37-9eb1-b5b58f30160d/storage_v2/_src_/database/auth.qN0tAA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/39d29473-0aaf-4b37-9eb1-b5b58f30160d/storage_v2/_src_/database/auth.qN0tAA/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/k8s/cluster-ip-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/k8s/cluster-ip-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/k8s/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/k8s/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/k8s/ingress.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/k8s/ingress.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/k8s/node-port-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/k8s/node-port-service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/k8s/service.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/users/service/api/openapi_spec/openapi.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/users/service/api/proto/users.proto" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users/service/api/proto/users.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/users/service/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users/service/cmd/http_server/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/users/service/internal/controller/controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users/service/internal/controller/controller.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/users/service/internal/handler/add.go" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users/service/internal/handler/http/add.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/users/service/internal/handler/delete.go" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users/service/internal/handler/http/delete.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/users/service/internal/handler/getall.go" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users/service/internal/handler/http/getall.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/users/service/internal/handler/getid.go" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users/service/internal/handler/http/getid.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/users/service/internal/handler/getuser.go" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users/service/internal/handler/http/getuser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/users/service/internal/handler/logged.go" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users/service/internal/handler/http/logged.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/users/service/internal/handler/login.go" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users/service/internal/handler/http/login.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/users/service/internal/handler/logout.go" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users/service/internal/handler/http/logout.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/users/service/internal/handler/notallowed.go" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users/service/internal/handler/http/notallowed.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/users/service/internal/handler/slicetojson.go" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users/service/internal/handler/http/slicetojson.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/users/service/internal/handler/time.go" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users/service/internal/handler/http/time.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/users/service/internal/handler/update.go" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users/service/internal/handler/http/update.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/users/service/internal/pkg/helpers/connect_postgres.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/users/service/internal/repository/postgresql/postgresql.go" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users/service/internal/repository/postgresql/postgresql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservices/users/service/internal/routes/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/microservices/users/service/internal/routes/routes.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,7 +56,8 @@
   &quot;contexts&quot;: [
     {
       &quot;name&quot;: &quot;minikube&quot;,
-      &quot;originalNamespace&quot;: &quot;default&quot;
+      &quot;originalNamespace&quot;: &quot;default&quot;,
+      &quot;currentNamespace&quot;: null
     }
   ],
   &quot;isMigrated&quot;: true
@@ -50,44 +82,44 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Add-API-Gateway-Service",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/home/saymon",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.stylelint": "/home/saymon/Backup/Portifolio/Hematology-App-with-Carbon-Design-System/frontend/node_modules/stylelint",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/home/saymon/Backup/Portifolio/Hematology-App-with-Carbon-Design-System/microservices/users/users-ms/node_modules/typescript/lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Add-API-Gateway-Service&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/saymon/Backup/Portifolio/patologia-clinica-lims-infra&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;/home/saymon/Backup/Portifolio/Hematology-App-with-Carbon-Design-System/frontend/node_modules/stylelint&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/saymon/Backup/Portifolio/Hematology-App-with-Carbon-Design-System/microservices/users/users-ms/node_modules/typescript/lib&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/microservices/users/service/cmd/http_server" />
+      <recent name="$PROJECT_DIR$/microservices/users/service/internal/handler/http" />
+      <recent name="$PROJECT_DIR$/microservices/api_gateway/service/api" />
       <recent name="$PROJECT_DIR$/microservices/users/service/api" />
       <recent name="$PROJECT_DIR$/microservices/users/service" />
-      <recent name="$PROJECT_DIR$/microservices/api_gateway/service" />
-      <recent name="$PROJECT_DIR$/microservices/api_gateway/service/internal/controller" />
-      <recent name="$PROJECT_DIR$/k8s" />
     </key>
   </component>
-  <component name="RunManager" selected="HTTP Request.generated-requests | #1">
+  <component name="RunManager" selected="Go Build.go build users/cmd/grpc_server">
     <configuration name="go build api_gateway/cmd" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Hematology-App-with-Carbon-Design-System" />
       <working_directory value="$PROJECT_DIR$/microservices/api_gateway/service" />
@@ -106,11 +138,21 @@
       <filePath value="$PROJECT_DIR$/microservices/users/service/cmd/main.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build users/cmd/grpc_server" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Hematology-App-with-Carbon-Design-System" />
+      <working_directory value="$PROJECT_DIR$/microservices/users/service" />
+      <kind value="PACKAGE" />
+      <package value="users/cmd/grpc_server" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/microservices/users/service/cmd/grpc_server/main.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build users/cmd/grpc_server" />
         <item itemvalue="HTTP Request.generated-requests | #1" />
         <item itemvalue="Go Build.go build users/cmd" />
         <item itemvalue="Go Build.go build api_gateway/cmd" />

@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: shell-mf-deployment
+  name: frontend-deployment
   labels:
-    name: shell-mf-deployment
+    name: frontend-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      name: shell-mf-deployment
+      name: frontend-deployment
   template:
     metadata:
       labels:
-        name: shell-mf-deployment
+        name: frontend-deployment
     spec:
       containers:
         - image: sayfelanjos/shell-mf:v1.0.0
